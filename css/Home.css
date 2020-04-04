@@ -1,0 +1,299 @@
+/*背景图片*/
+.imgBody {
+    width: 100%;
+    background: url("img/an.jpg") no-repeat;
+    position: fixed;
+    top: 5px;
+    z-index: -1;
+}
+/*头部盒子*/
+.home-header {
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction:column;// 内部元素纵向排列
+}
+
+    /*背景视频*/
+.showvid {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    overflow: hidden;
+}
+
+/*游戏介绍 */
+.rowHeader {
+    margin: 0 auto;
+    z-index: 500;
+    width: 500px;
+    height: 500px;
+    margin-top:50px ;
+    justify-content:center;
+    text-align: center;
+}
+/*图片大小*/
+.logotextRow {
+    width: 250px;
+    height: 150px;
+}
+/*按钮立即购买*/
+.hideRow {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.hideRow:hover{
+    opacity: 0.5;
+}
+.ideoRow {
+    background-color: orange;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+.ideoRow:hover{
+    opacity: 0.5;
+}
+
+
+    /*播放器的样式*/
+.txVideo {
+    background: rgba(3, 12, 21, .98);
+    width: 80%;
+    height: 80%;
+    display: flex;
+    top: 100px;
+    z-index: 998;
+}
+/*播放器的按钮样式*/
+.closeVideo {
+    color: #00c3ff;
+    font-size: 50px;
+    top: 12%;
+    left: 86%;
+    z-index: 999;
+}
+
+
+
+/*主页新闻板块*/
+.innerNews {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background: white;
+    min-width: 1800px;
+    min-height: 500px;
+    position: relative;
+}
+.box1News {
+    width: 700px;
+    height: 300px;
+    float: left;
+    position: absolute;
+    left: 200px;
+
+}
+.box2News {
+    width: 700px;
+    height: 300px;
+    float: right;
+    position: absolute;
+    right: 200px;
+}
+.newsImage {
+    width: 700px;
+    height: 300px;
+}
+.h5News {
+    margin-left: 890px;
+}
+.h3News {
+    width: 695px;
+    background-color: rgba(0, 0, 0, .7);
+    padding-top: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    bottom: 70px;
+
+}
+
+/*查看所有新闻按钮div*/
+.selectNewButton {
+    position: absolute;
+    top: 400px;
+    left: 860px;
+}
+/*按钮样式*/
+.NewsSelect {
+    background: rgb(0, 165, 226);
+    padding: 10px 20px 10px 20px;
+}
+.NewsSelect:hover {
+    background: rgba(0, 165, 226,.6);
+}
+
+
+/*图片切换样式*/
+.innerImageBox{
+    width: 100%;
+    height: 690px;
+}
+.ineImageBox{
+    text-align: center;
+    color: white;
+}
+/*h2标签样式*/
+.intro-heading {
+    color:  rgb(0, 165, 226);
+    font-size: 50px;
+    padding-top: 100px;
+}
+
+.m-lg{
+    padding: 10px 20px 10px 20px;
+}
+
+/*英雄显示*/
+.rowcolumn {
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    display: flex;
+    flex-direction:column
+}
+
+.u-max-width {
+    width: 100%;
+    height: 400px;
+    color: white;
+}
+.full-width-container{
+    width: 100%;
+    height: 250px;
+    background-color: gray;
+    display: flex;
+    justify-content:center;
+
+
+}
+.spotlight{
+    size: 20px;
+    width: 100%;
+    height: 450px;
+    position: relative;
+    bottom: 100px;
+}
+.spotlight>p{
+    color: white;
+    position: relative;
+    bottom: 300px;
+    left: 500px;
+}
+.spotlight>p spanTwo{
+    width: 200px;
+}
+/*英雄小头像盒子*/
+.wanOne{
+    width: 100%;
+    height: 450px;
+}
+.wanTwo{
+    height: 350px;
+    background-color: black;
+}
+
+.xiao {
+    width: 100%;
+    text-align: center;
+}
+.xiao a img {
+    border-radius: 20px;
+    width: 80px;
+    height: 70px;
+}
+.xiao a img:hover{
+    background-color: orange;
+}
+
+
+#axi {
+    width: 400px;
+    height: 450px;
+}
+
+
+
+#txt>span {
+    color: white;
+    font-size: 50px;
+}
+
+
+.intro-text {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.footImageOne{
+ position: relative;
+ bottom: 40px;
+}
+.footImageTwo{
+    position: relative;
+    bottom: 150px;
+    left: 300px;
+}
+.wanTwo>p {
+    color: white;
+    position: relative;
+    bottom: 100px;
+    left: 600px;
+}
+
+.bott {
+    margin: 0;
+    padding: 0;
+    line-height: 26px;
+    width: auto;
+    font-size: 12px !important;
+}
+
+
+
+<!--底部样式-->
+.xian {
+    width: 100%;
+    height: 20px;
+    background: black;
+}
+
+.bott {
+    text-align: center;
+    background: grey;
+
+}
+
+.clearFix {
+    font-style: normal;
+}
+
+.cprt {
+    color: black;
+    font-size: 15px;
+}

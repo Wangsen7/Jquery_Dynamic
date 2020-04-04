@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>《守望先锋》电子竞技</title>
+</head>
+<body>
+
+<style>
+
+    body {
+        color: #333;
+        fill: #333;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color:rgb(40,53,79) ;
+        max-width: 100%;
+        overflow-x: hidden;
+        font: normal normal normal 10px "microsoft yahei",Arial,sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    .row{
+        position: absolute;left: 700px;top: 300px;
+    }
+    .u-relative{
+        position: relative;right:160px;bottom: 30px;
+    }
+    .hide2{
+        margin-left:180px;
+
+    }
+    .ideo1{
+        margin-left:180px;
+    }
+    .show-for-xl{
+        padding: 0px;
+        margin: 0px;
+
+    }
+    #showvid{
+        margin: 0px;
+        padding: 0px;
+        width: 99.9%;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+    }
+    .navbars {
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color:rgba(128,128,128,.8);
+    }
+    blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav[role=main] {
+        background-color: #f2f1ed;
+        position: relative;
+        z-index: 96;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    nav[role=main] .nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    nav[role=main] .nav-left {
+        float: left;
+        font-size: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    ul {
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 1.25rem;
+    }
+    dl, ol, ul {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        list-style-position: outside;
+    }
+    nav[role=main] .nav-btn {
+        height: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0 solid transparent;
+        box-sizing: border-box;
+        font-size: 20px;
+        padding: 0 20px;
+        text-transform: none;
+        color: white;
+        text-align: center;
+        text-shadow: none;
+        letter-spacing: .05em;
+        position: relative;
+        cursor: pointer;
+        border-right: 1px solid grey;
+        -webkit-transition: background-color .2s;
+        transition: background-color .2s;
+    }
+    .blog-index a {
+        color: #f0edf2;
+    }
+
+    a {
+        color: #f7931e;
+        text-decoration: none;
+        line-height: inherit;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    nav[role=main].nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    nav[role=main] .nav-right {
+        float: right;
+        font-size: 0;
+        margin: 0;
+        height: 48px;
+    }
+
+
+
+
+
+    nav[role=main] .nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    nav[role=main] .nav-menu.m-sub-menu li {
+        display: block;
+    }
+    nav[role=main] .nav-menu li {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+    li {
+        font-size: inherit;
+    }
+    .nav-right{
+        background-color:rgb(247, 147, 30);
+    }
+    .home-header__logotext{
+        height: 45px;
+    }
+    #gotop {
+        width: 40px;
+        height: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(255,255,255,.25);
+        color: #000;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;
+        z-index: 501;
+        display: none;
+        cursor: pointer;
+    }
+    .tx{
+        background: rgba(3,12,21,.98);;
+        width: 80%;
+        height: 80%;
+        position: fixed;top: 12%;left: 10%;
+        z-index: 998;
+    }
+    .num1 {
+        color: #00c3ff;
+        font-size: 70px;
+        position: fixed;top: 12%;left: 86%;
+        z-index: 999;
+    }
+    .nav-btn.m-highlight {
+        font-size: 10px;
+    }
+</style>
+<style>
+    nav[role=main] .nav-menu.m-sub-menu {
+        margin: 0;
+        background-color: #353c42;
+        position: absolute;
+        top: 100%;
+        min-width: 160px;
+        left: 0;
+        height: auto;
+        z-index: 99;
+        display: none;
+    }
+    nav[role=main] .nav-btn.m-open, nav[role=main] .nav-btn:hover {
+        background-color: #353c42;
+        -webkit-transition: none;
+        transition: none;
+        color: #ff9c00;
+    }
+    .ability-showcase{
+        height: 900px;
+    }
+
+    .uu li{
+
+        width: 130px;
+        height: 130px;
+        list-style: none;
+        float: left;
+    }
+    .uu li img{
+        background: rgba(72,81,110,.7);
+    }
+    .uu{
+        position: absolute;
+        bottom: 20px;
+        left: 450px;
+    }
+    .logotext{
+        height: 65px;
+        width: 65px;
+        border-radius:50%;
+        border: solid white;
+        position: relative;bottom: 105px;left: 25px;
+    }
+
+</style>
+
+
+
+<style>
+    /* flip the pane when hovered */
+    .to2:hover, .to3:hover, .to4:hover, .to5:hover{
+        transform: rotateY(180deg);
+        -moz-transform:rotateY(180deg);     /* Firefox */
+    }
+    .front1, .back1, .back2,.front2, .back3,.front3, .back4,.front4 {
+        width: 300px;
+        height: 300px;
+    }
+    /* flip speed goes here */
+    .to2,.to3,.to4,.to5 {
+        transition: 0.6s;
+        transform-style: preserve-3d;
+        -moz-transform-style: preserve-3d;
+    }
+
+    /* hide back of pane during swap */
+    .front1, .back1,.front2,.front3,.front4,.back2,.back3,.back4 {
+        line-height:320px;
+        color:#ffffff;
+        text-align: center;
+        font-size: 24px;
+        backface-visibility:hidden;
+        -webkit-backface-visibility:hidden;    /* Chrome 和 Safari */
+        -moz-backface-visibility:hidden;     /* Firefox */
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    /* front pane, placed above back */
+    .front1{
+        background: url("imag/xw8.jpg");
+        background-size: cover;
+    }
+    .front2{
+    background: url("imag/xwb1.jpg");
+    background-size: cover;
+}
+    .front3{
+        background: url("imag/xwbb.jpg");
+        background-size: cover;
+    }
+    .front4{
+        background: url("imag/xwb2.jpg");
+        background-size: cover;
+    }
+
+    /* back, initially hidden pane */
+    .back1,.back2,.back3,.back4{
+        transform: rotateY(180deg);
+        -moz-transform:rotateY(180deg);     /* Firefox */
+        background: grey;
+    }
+
+</style>
+
+<style>
+    .topp{
+       height: 2000px;
+        background: url("imag/zwaa.jpg");
+        background-size: cover;
+        position: relative;
+    }
+    .bodd{
+        height: 1000px;
+    }
+    body{
+        background:#241B1C ;
+    }
+    .to{
+        height: 700px;
+        width: 1500px;
+        position: absolute;top: 80px;left: 200px;
+        position: relative;
+    }
+    
+    .to1{
+        position: absolute;
+        width: 600px;
+        height: 300px;
+        background: url("imag/xw7.jpg");
+        background-size: cover;
+        border: 2px solid white;
+        left: 50px;
+    }
+    .to2 ,.to3,.to4,.to5{
+        width: 300px;
+        height: 300px;
+        border: 2px solid white;
+
+    }
+    .to2{
+        position: absolute;
+        left: 700px;
+
+    }
+    .to3{
+        position: absolute;
+        left:1050px;
+
+    }
+    .to4{
+        position: absolute;
+       top: 350px;
+        left: 50px;
+
+    }
+    .to5{
+        position: absolute;
+        top: 350px;
+        left: 400px;
+
+    }
+    .to6{
+        width: 600px;
+        height: 300px;
+        border: 2px solid white;
+        position: absolute;
+        top: 350px;
+        left: 750px;
+        background: url("imag/xwb4.jpg");
+        background-size: cover;
+    }
+    .to1 span,.to6 span{
+        background: rgba(0,0,0,.7);
+        color: white;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        position: absolute;
+        top: 250px;
+        font-size: 20px;
+        text-align: center;
+        width: 600px;
+    }
+
+
+    /*.to1 span,.to6 span{*/
+        /*width: 600px;*/
+    /*}*/
+    /*.to2 span,.to3 span,.to4 span,.to5 span{*/
+        /*width: 300px;*/
+    /*}*/
+
+
+</style>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(document).ready(function(){
+        var sticky = document.querySelector('.navbars');
+        var origOffsetY = sticky.offsetTop;
+
+        function onScroll(e) {
+            window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
+                    sticky.classList.remove('fixed');
+        }
+
+        document.addEventListener('scroll', onScroll);
+    });
+    $("li a").mouseover(function(){
+        $(this).css({"background-color":"black"})
+    }).mouseout(function(){
+        $(this).css({"background-color":"rgba(40,53,79,.8)"});
+    });
+
+    $(function(){
+        $(".nav-menu.nav-left>li").hover(function(){
+            $(this).find("ul").show();
+        },function(){
+            $(this).find("ul").hide();
+        }) ;
+    });
+
+
+</script>
+
+<style>
+    .bodd{
+        border-top: 2px solid grey;
+        margin-top: 100px;
+        width: 80%;
+        position: absolute;
+        left: 10%;
+    }
+ul li{
+    list-style: none;
+}
+.xx li img{
+    width: 254px;
+    height: 127px;
+    border: 1px solid white;
+    margin-top: 50px;
+}
+.xx li p{
+    width: 900px;
+    color: white;
+    float: right;
+    margin-top: 40px;
+    margin-right: 150px;
+    font-size: 20px;
+}
+    .xx li img:hover{
+        border: 1px solid deepskyblue;
+    }
+
+    .xx li{
+        height: 250px;
+        width: 1400px;
+        border-bottom:1px solid grey ;
+    }
+</style>
+<div class="topp">
+    <p style="background: #131315;width: 100%; height: 30px" class="ti" ></p>
+    <div class="navbars">
+    <nav role="main" class=""style="max-width:1600px;" >
+        <div class="nav-left">
+            <a href="Home-Page.html"><img src="imag/01.png" class="home-header__logotext"></a>
+        </div>
+        <ul class="nav-menu nav-left">
+            <li>
+                <a href="javascript:void(0);" class="nav-btn m-has-children">游戏</a>
+                <ul class="nav-menu m-sub-menu">
+                    <li><a href="" class="nav-btn m-highlight">概述</a></li>
+                    <li><a href="" class="nav-btn m-highlight">赞赏系统</a></li>
+                </ul>
+            </li>
+            <li><a href="" class="nav-btn ">英雄</a></li>
+            <li>
+                <a href="javascript:void(0);" class="nav-btn m-has-children">活动</a>
+                <ul class="nav-menu m-sub-menu">
+                    <li><a href="">夏季运动会</a></li>
+                    <li><a href="" class="nav-btn m-highlight">行动档案</a></li>
+                    <li><a href="" class="nav-btn m-highlight">欢度新春</a></li>
+                    <li><a href="" class="nav-btn m-highlight">雪国仙境</a></li>
+                    <li><a href="" class="nav-btn m-highlight">万圣夜惊魂</a></li>
+                    <li><a href="" class="nav-btn m-highlight">周年庆典</a></li>
+                    <li><a href="" class="nav-btn m-highlight">国王行动</a></li>
+                </ul>
+            </li><li><a href="" class="nav-btn ">视频图片</a></li>
+            <li>
+                <a href="javascript:void(0);" class="nav-btn m-has-children">新闻</a>
+                <ul class="nav-menu m-sub-menu">
+                    <li><a href="" class="nav-btn m-highlight m-active">新闻</a></li>
+                    <li><a href="" class="nav-btn m-highlight">补丁</a></li>
+                </ul>
+            </li>
+            <li><a href="" class="nav-btn">下载</a></li>
+            <li>
+                <a href="ProfessionPage.html" class="nav-btn m-has-children">电子竞技</a>
+                <ul class="nav-menu m-sub-menu">
+                    <li><a href="">概述</a></li>
+                    <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋公开争霸赛</a></li>
+                    <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋挑战者选拔赛</a></li>
+                    <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋挑战者系列赛</a></li>
+                    <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋联赛</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="nav-btn m-has-children">社区</a>
+                <ul class="nav-menu m-sub-menu">
+                    <li><a href="" class="nav-btn m-highlight">生涯数据</a></li>
+                    <li><a href="" class="nav-btn m-highlight">我们身边的英雄</a></li>
+                    <li><a href="" target="_blank" class="nav-btn m-highlight">论坛</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav-right"><a href="Shopping-mail.html" target="_blank" class="nav-btn m-orange m-big">购买</a></div>
+    </nav>
+</div>
+
+    <div class="to">
+        <div class="to1">
+            <span class="front">1.34版本更新：巴蒂斯特现已上线</span>
+        </div>
+
+
+        <div class="to2">
+            <div class="front1">
+            </div>
+            <div class="back1">
+                <img src="imag/wang.png">
+            </div>
+        </div>
+
+        <div class="to3">
+            <div class="front2">
+            </div>
+            <div class="back2">
+                <img src="imag/wang.png">
+            </div>
+        </div>
+        <div class="to4">
+            <div class="front3">
+            </div>
+            <div class="back3">
+                <img src="imag/wang.png">
+            </div>
+        </div>
+        <div class="to5">
+            <div class="front4">
+            </div>
+            <div class="back4">
+                <img src="imag/wang.png">
+            </div>
+        </div>
+        <div class="to6">
+            <span class="fon">暴雪战网商城现已支持花呗</span>
+        </div>
+
+    </div>
+
+
+    <div class="bodd">
+        <ul class="xx" style="height: 1050px;overflow: hidden">
+            <li>
+                <a href="post-message.html"><img src="imag/xw1.jpg"></a>
+                <p>
+                    「本地新闻」堂·朗博蒂科品牌享誉国际，但品牌创始人却正在淡出人们的视线
+                    <br/><em>发布日期：2019-04-08</em><br/>
+                    记者玛瑞斯·索利斯带您了解一份家族遗产与社区宝藏的失落之旅。
+                </p>
+            </li>
+            <li>
+                <img src="imag/xw2.jpg">
+                <p>
+
+                    《守望先锋》2019城市巡礼4月5日登陆上海
+                    <br/> <em>发布日期：2019-03-26</em><br/>
+                    2019《守望先锋》城市巡礼第二站将于4月5日登陆上海正大乐城。现场玩家除了可以免费试玩游戏，
+                    还可以参加丰富的现场互动与水友赛，并一同观看上海龙之队与广州冲锋队的比赛。
+                </p>
+            </li>
+            <li>
+                <img src="imag/xw3.jpg">
+                <p>
+                    巴黎钢琴演奏活动优秀作品赏
+                    <br/><em>发布日期：2019-03-25</em><br/>
+                    一个月时光飞逝，我们最终选出了参与本次活动的10名优秀作者，下面就让我们聆听本次活动的优秀作品汇演吧。
+                </p>
+            </li>
+            <li>
+                <img src="imag/xw4.jpg">
+                <p>
+                    《守望先锋》媒体活动集合（3月22日<br/>
+                    <em>发布日期：2019-03-22</em><br/>
+                    新英雄巴蒂斯特加入战场！除了一系列精彩的线上活动，
+                    我们还携手众多社区媒体为广大玩家带来了守望先锋海量战网点卡以及众多福利周边。
+                </p>
+            </li>
+            <li>
+                <img src="imag/xwc1.jpg">
+                <p>
+                    2019《守望先锋挑战者系列赛》3月16日战火重燃<br/>
+                    <em>发布日期：2019-03-14</em><br/>
+                    2019中国区《守望先锋挑战者系列赛》（Overwatch Contenders）第一赛季将在3月16日重新点燃战火。
+                </p>
+            </li>
+            <li>
+                <img src="imag/xwc2.jpg">
+                <p>
+                    开发者问答：巴蒂斯特<br/>
+                    <em> 发布日期：2019-03-14</em><br/>
+                    几位开发人员回答了关于《守望先锋》
+                    第30位英雄巴蒂斯特玩法设计和故事背景的问题，
+                    新英雄将于3月20日正式上线。
+                </p>
+            </li>
+            <li>
+                <img src="imag/xwc3.jpg">
+                <p>
+                    「媒体推荐」努巴尼“守望钢琴师”活动作品展<br/>
+                    <em> 发布日期：2019-03-13</em><br/>
+                    来自努巴尼守望先锋“守望钢琴师”活动的优秀作品，一起来看看吧。
+                </p>
+            </li>
+            <li>
+                <img src="imag/xwc4.jpg">
+                <p>
+                    2019全民实力赛春季赛正式开放报名<br/>
+                    <em>发布日期：2019-03-12</em><br/>
+                    暴雪游戏全民实力赛2019年春季赛正式开启，守望项目已在数十个城市全面开放报名！
+                </p>
+            </li>
+            <li>
+                <img src="imag/xwc5.jpg">
+                <p>
+                    2019中国区《守望先锋公开争霸赛》第二赛季报名通道正式开启<br/>
+                    <em>发布日期：2019-03-01</em><br/>
+                    2019年3月1日，2019中国区《守望先锋公开争霸赛》
+                    （Overwatch Open Division）第二赛季正式开启报名通道。
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+<script type="text/javascript">
+    $(function(){
+//每隔两秒进行一次滚动
+        var timing =setInterval("info()",2000);
+        $(".xx").hover(
+                function(){clearInterval(timing);},
+                function(){timing = setInterval("info()",2000);}
+        )
+    })
+
+    function info(){
+//复制第一个li
+        var li =$(".xx>li:eq(0)").clone();
+//使用animate对li的外边距进行调整从而达到向上滚动的效果
+        $(".xx>li:eq(0)").animate({marginTop:"-250px"},2000,function(){
+//对已经消失的li进行删除
+            $(".xx>li:eq(0)").remove();
+//把复制后的li插入到最后
+            $(".xx").append(li);
+        })
+    }
+</script>
+<script>
+    $(".front").mouseover(function(){
+        $(".front").css("color","orange")
+    }).mouseout(function(){
+        $(".front").css("color","white")
+    });
+    $(".fon").mouseover(function(){
+        $(".fon").css("color","orange")
+    }).mouseout(function(){
+        $(".fon").css("color","white")
+    });
+
+    $(" .xx li").mouseover(function(){
+        $(this).css("background-color","rgba(0,0,0,.1)")
+    }).mouseout(function(){
+        $(this).css("background-color","transparent")
+    });
+
+</script>
+<style>
+
+    .bott{
+        text-align: center;
+        background: #202020;
+
+    }
+    .clearFix{
+        font-style: normal;
+    }
+    .cprt{
+        color: grey;
+        font-size: 15px;
+    }
+
+</style>
+
+<div class="bott">
+    <img src="imag/wa2.png"/>
+    <img src="imag/wa1.png"/>
+    <div id="f-business" class="f-cb">
+        <p class="f-cs">
+            <a href=""class="cs-online" style="font-size: 15px">
+                <span class="icon icon-1"></span>在线客服</a>&nbsp;&nbsp;&nbsp;
+            <a href="" class="cs-Feedback" style="font-size: 15px">
+                <span class="icon icon-2"></span>反馈</a>&nbsp;&nbsp;&nbsp;
+            <a target="_blank" class="cs-joinUs" href="" style="font-size: 15px"><span class="icon icon-3"></span>加入我们</a>&nbsp;&nbsp;&nbsp;
+        </p>
+        <div class="foot-media" id="js_footMedia">
+            <dl style="display: none;">
+                <dt><span class="icon-media">合作媒体</span><span class="icon-more"><i></i></span></dt>
+                <dd><ul id="js_joiner"></ul></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cprt">
+        <a href="" class="logo_bz"></a>
+        <a  href="" class="logo_ne"></a>
+        <div class="info">
+            <p class="clearFix">
+                隐私|法律条款|API
+            </p>
+
+            <p>?2019 暴雪娱乐有限公司版权所有 <span>由上海网之易网络科技发展有限公司运营</span>
+                著作权侵权
+                &nbsp;|&nbsp;<span id="js_shenzi">新广出审[2016]378号</span>
+            </p>
+            <p><span id="js_wenjinwang">文网游进字[2016]0025号</span>&nbsp;|&nbsp;
+                沪网文号〔2017〕9633-727号
+                &nbsp;|&nbsp;
+                增值电信业务经营许可证编号：沪B2－20080012
+            </p>
+            <p>互联网违法和不良信息举报电话：0571-28090163&nbsp;沪公网安备 31011502022167号&nbsp;|&nbsp;
+                上海市网络游戏行业自律公约
+            </p>
+            <p class="integrity">
+                <a target="_blank" href="">
+                    <img src="imag/p1.png"></a>
+                <a target="_blank" href="">
+                    <img src="imag/p2.png"></a>
+
+                <a target="_blank" href="">
+                    <img src="imag/p3.png"></a>
+                <a target="_blank" href=""><img src="imag/p4.png"> </a>
+
+                <a target="_blank" href="">
+                    <img src="imag/p2.png"></a>
+                <span>| &nbsp;适龄提示：适合13岁及以上使用&nbsp;&nbsp;</span>
+                <a href="" target="_blank" style="font-size: 15px">家长监护工程&gt;</a>
+            </p>
+        </div>
+    </div>
+    <hr/>
+    <p class="tips" style="font-size: 10px">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。
+        <br>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p></div>
+</body>
+</html>

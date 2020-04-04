@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>《守望先锋》电子竞技</title>
+</head>
+<body>
+<style>
+
+    body {
+        color: #333;
+        fill: #333;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color:rgb(40,53,79) ;
+        max-width: 100%;
+        overflow-x: hidden;
+        font: normal normal normal 10px "microsoft yahei",Arial,sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    .row{
+        position: absolute;left: 700px;top: 300px;
+    }
+    .u-relative{
+        position: relative;right:160px;bottom: 30px;
+    }
+    .hide2{
+        margin-left:180px;
+
+    }
+    .ideo1{
+        margin-left:180px;
+    }
+    .show-for-xl{
+        padding: 0px;
+        margin: 0px;
+
+    }
+    #showvid{
+        margin: 0px;
+        padding: 0px;
+        width: 99.9%;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+    }
+    .navbars {
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color:rgba(128,128,128,.8);
+    }
+    blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav[role=main] {
+        background-color: #f2f1ed;
+        position: relative;
+        z-index: 96;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    nav[role=main] .nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    nav[role=main] .nav-left {
+        float: left;
+        font-size: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    ul {
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 1.25rem;
+    }
+    dl, ol, ul {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        list-style-position: outside;
+    }
+    nav[role=main] .nav-btn {
+        height: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0 solid transparent;
+        box-sizing: border-box;
+        font-size: 20px;
+        padding: 0 20px;
+        text-transform: none;
+        color: white;
+        text-align: center;
+        text-shadow: none;
+        letter-spacing: .05em;
+        position: relative;
+        cursor: pointer;
+        border-right: 1px solid grey;
+        -webkit-transition: background-color .2s;
+        transition: background-color .2s;
+    }
+    .blog-index a {
+        color: #f0edf2;
+    }
+
+    a {
+        color: #f7931e;
+        text-decoration: none;
+        line-height: inherit;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    nav[role=main].nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    nav[role=main] .nav-right {
+        float: right;
+        font-size: 0;
+        margin: 0;
+        height: 48px;
+    }
+
+
+
+
+
+    nav[role=main] .nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    nav[role=main] .nav-menu.m-sub-menu li {
+        display: block;
+    }
+    nav[role=main] .nav-menu li {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+    li {
+        font-size: inherit;
+    }
+    .nav-right{
+        background-color:rgb(247, 147, 30);
+    }
+    .home-header__logotext{
+        height: 45px;
+    }
+    #gotop {
+        width: 40px;
+        height: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(255,255,255,.25);
+        color: #000;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;
+        z-index: 501;
+        display: none;
+        cursor: pointer;
+    }
+    .tx{
+        background: rgba(3,12,21,.98);;
+        width: 80%;
+        height: 80%;
+        position: fixed;top: 12%;left: 10%;
+        z-index: 998;
+    }
+    .num1 {
+        color: #00c3ff;
+        font-size: 70px;
+        position: fixed;top: 12%;left: 86%;
+        z-index: 999;
+    }
+    .nav-btn.m-highlight {
+        font-size: 10px;
+    }
+</style>
+<style>
+    nav[role=main] .nav-menu.m-sub-menu {
+        margin: 0;
+        background-color: #353c42;
+        position: absolute;
+        top: 100%;
+        min-width: 160px;
+        left: 0;
+        height: auto;
+        z-index: 99;
+        display: none;
+    }
+    nav[role=main] .nav-btn.m-open, nav[role=main] .nav-btn:hover {
+        background-color: #353c42;
+        -webkit-transition: none;
+        transition: none;
+        color: #ff9c00;
+    }
+    .ability-showcase{
+        height: 900px;
+    }
+
+    .uu li{
+        width: 130px;
+        height: 130px;
+        list-style: none;
+        float: left;
+    }
+    .uu li img{
+        background: rgba(72,81,110,.7);
+    }
+    .uu{
+        position: absolute;
+        bottom: 20px;
+        left: 450px;
+    }
+    .logotext{
+        height: 65px;
+        width: 65px;
+        border-radius:50%;
+        border: solid white;
+        position: relative;bottom: 105px;left: 25px;
+    }
+
+</style>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(document).ready(function(){
+        var sticky = document.querySelector('.navbars');
+        var origOffsetY = sticky.offsetTop;
+
+        function onScroll(e) {
+            window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
+                    sticky.classList.remove('fixed');
+        }
+
+        document.addEventListener('scroll', onScroll);
+    });
+    $("li a").mouseover(function(){
+        $(this).css({"background-color":"black"})
+    }).mouseout(function(){
+        $(this).css({"background-color":"rgba(40,53,79,.8)"});
+    });
+
+    $(function(){
+        $(".nav-menu.nav-left>li").hover(function(){
+            $(this).find("ul").show();
+        },function(){
+            $(this).find("ul").hide();
+        }) ;
+    });
+
+</script>
+
+
+<style>
+  .hidd{
+      height: 1400px;
+      background: url("imag/zyb2.jpg");
+      position: relative;
+  }
+    .content{
+        width: 900px;
+        height: 600px;
+        background: url("imag/zy1.jpg");
+       position: absolute;left: 500px;top: 200px;
+        border: solid 2px grey;
+    }
+    .content img{
+        padding-left: 390px;
+        padding-top: 250px;
+    }
+  .num1 {
+      color: #00c3ff;
+      font-size: 70px;
+      position: fixed;top: 12%;left: 86%;
+      z-index: 999;
+  }
+    .js{
+        text-align: center;
+      position: absolute;left: 600px;
+        top: 850px;
+        color: white;
+        width: 700px;
+
+    }
+    .js p{
+       font-size: 15px;
+    }
+
+    .da1{
+        width: 1200px;
+        height: 380px;
+        background: #EBEBEB;
+        position: absolute;top: 1000px;left: 350px;
+    }
+
+
+    .da2,.da3,.da4,.da5{
+        height: 380px;
+        background: #E9E9E7;
+        width: 200px;
+        float: left;
+        border-left: solid 0.2px grey;
+        position: relative;
+    }
+
+    .da2 p,.da3 p,.da4 p,.da5 p{
+        font-size: 12px;
+    }
+
+    .daa1 span,.daa2 span,.daa3 span,.daa4 span{
+        background: #FF9C01;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+.da2 img,.da3 img,.da4 img,.da5 img{
+    position: absolute;
+    top: 150px;
+    left: 10px;
+}
+    .daa1,.daa2,.daa3,.daa4{
+        position: absolute;left: 200px;top: 120px;
+        width: 350px;
+        text-align: center;
+    }
+
+
+    .da5{
+        height: 380px;
+        float: left;
+        width: 590px;
+        border-left: solid 0.2px grey;
+        background: #E9E9E7;
+    }
+</style>
+<p style="background: white;width: 100%; height: 10px" class="ti" ></p>
+<div class="navbars">
+    <nav role="main" class=""style="max-width:1600px;" >
+        <div class="nav-left">
+           <a href="Home-Page.html"><img src="imag/01.png" class="home-header__logotext"></a>
+        </div>
+        <ul class="nav-menu nav-left">
+            <li>
+                <a href="javascript:void(0);" class="nav-btn m-has-children">游戏</a>
+                <ul class="nav-menu m-sub-menu">
+                    <li><a href="" class="nav-btn m-highlight">概述</a></li>
+                    <li><a href="" class="nav-btn m-highlight">赞赏系统</a></li>
+                </ul>
+            </li>
+            <li><a href="" class="nav-btn ">英雄</a></li>
+            <li>
+                <a href="javascript:void(0);" class="nav-btn m-has-children">活动</a>
+                <ul class="nav-menu m-sub-menu">
+                    <li><a href="">夏季运动会</a></li>
+                    <li><a href="" class="nav-btn m-highlight">行动档案</a></li>
+                    <li><a href="" class="nav-btn m-highlight">欢度新春</a></li>
+                    <li><a href="" class="nav-btn m-highlight">雪国仙境</a></li>
+                    <li><a href="" class="nav-btn m-highlight">万圣夜惊魂</a></li>
+                    <li><a href="" class="nav-btn m-highlight">周年庆典</a></li>
+                    <li><a href="" class="nav-btn m-highlight">国王行动</a></li>
+                </ul>
+            </li><li><a href="" class="nav-btn ">视频图片</a></li>
+            <li>
+                <a href="News-details.html" class="nav-btn m-has-children">新闻</a>
+                <ul class="nav-menu m-sub-menu">
+                    <li><a href="" class="nav-btn m-highlight m-active">新闻</a></li>
+                    <li><a href="" class="nav-btn m-highlight">补丁</a></li>
+                </ul>
+            </li>
+            <li><a href="" class="nav-btn">下载</a></li>
+            <li>
+                <a href="" class="nav-btn m-has-children">电子竞技</a>
+                <ul class="nav-menu m-sub-menu">
+                    <li><a href="">概述</a></li>
+                    <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋公开争霸赛</a></li>
+                    <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋挑战者选拔赛</a></li>
+                    <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋挑战者系列赛</a></li>
+                    <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋联赛</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="javascript:void(0);" class="nav-btn m-has-children">社区</a>
+                <ul class="nav-menu m-sub-menu">
+                    <li><a href="" class="nav-btn m-highlight">生涯数据</a></li>
+                    <li><a href="" class="nav-btn m-highlight">我们身边的英雄</a></li>
+                    <li><a href="" target="_blank" class="nav-btn m-highlight">论坛</a></li>
+                </ul>
+            </li>
+        </ul>
+        <div class="nav-right"><a href="Shopping-mail.html" target="_blank" class="nav-btn m-orange m-big">购买</a></div>
+    </nav>
+</div>
+<div class="hidd">
+    <p style="font-size: 60px;color: white;padding-top: 50px;padding-left: 600px">《守望先锋》电子竞技</p>
+        <div class="content">
+            <img src="imag/zyb3.png" id="im">
+        </div>
+    <div class="num1" harf="">x</div>
+    <div class="tx" style="height:85%"><video width="100%" height="100%" controls="controls" autoplay="autoplay" preload="auto" id="mp">
+        <source src="imag/ji.mp4" type="video/mp4">您的浏览器暂时无法播放此视频.</video>
+    </div>
+
+    <div class="js">
+    <h1>职业之路</h1>
+    <p>《守望先锋》电子竞技的道路以竞技模式为起点，最终通往《守望先锋联赛》的殿堂。
+    无论你是有国际舞台的经验，或是初次加入专业队伍，都欢迎你关注甚至是参与《守望先锋》电竞比赛！</p>
+
+    </div>
+
+<div class="da1">
+    <div class="da2">
+            <img src="imag/zy2.png">
+        <div class="daa1">
+        <h3>守望先锋公开争霸赛</h3>
+        <p>
+            《守望先锋公开争霸赛》欢迎任何竞技等级的玩家，
+            目前你可以选择韩国、中国、澳大利亚、南美、北美、欧洲，
+            以及亚太地区开始你的征程。如果你热爱电子竞技，
+            这是你在系统化的比赛中一展身手的好机会！
+        </p>
+            <span>查看《守望先锋公开争霸赛》</span>
+        </div>
+    </div>
+
+    <div class="da3">
+        <img src="imag/zy3.png">
+        <div class="daa2">
+            <h3>守望先锋挑战者选拔赛</h3>
+            <p>
+                《守望先锋挑战者选拔赛》的每一个赛季结束时，
+                将有四支队伍与《守望先锋公开争霸赛》前四名队伍一起，
+                共八支战队参加该地区的《守望先锋挑战者选拔赛》，
+                在升/降级比赛中争夺系列赛的席位。
+            </p>
+            <span>查看《守望先锋挑战者选拔赛》</span>
+        </div>
+    </div>
+
+    <div class="da4">
+        <img src="imag/zy4.png">
+        <div class="daa3">
+            <h3>守望先锋挑战者系列赛</h3>
+            <p>
+                对于追求卓越的《守望先锋》职业选手而言，
+                参加《守望先锋挑战者系列赛》是一个重要的里程碑。
+                12支战队汇集众多明日之星，通过一年三个赛季的比拼，
+                力求在七个赛区中突出重围。系列赛每个赛季结束时
+                ，将有数支战队参加该地区的《守望先锋挑战者选拔赛》
+                。在系列赛中表现突出的选手未来有望被《守望先锋联赛》战队收入麾下。
+            </p>
+            <span>查看《守望先锋挑战者系列赛》</span>
+        </div>
+    </div>
+
+    <div class="da5">
+        <img src="imag/zy5.png">
+        <div class="daa4">
+            <h3>守望先锋联赛</h3>
+            <p>
+                《守望先锋联赛》是全球首个以城市战队为单位的大型电竞联赛，
+                是《守望先锋》电子竞技的最高殿堂。
+                虽然在现阶段，各战队由经过精挑细选的选手所组成，
+                未来《守望先锋联赛》可能会从《守望先锋挑战者系列赛》
+                中吸纳优秀的选手，以持续保障联赛的选手实力。
+                来自世界各地的顶尖职业选手们享有稳定的薪金与福利，
+                并且可以在贯穿全年的比赛中追逐《守望先锋联赛》冠军的荣誉，
+                以及数百万美元的丰厚奖金！
+            </p>
+            <span>查看《守望先锋联赛》</span>
+        </div>
+    </div>
+</div>
+</div>
+
+<style>
+    .boo{
+        background: url("imag/zyb1.jpg");
+        height: 400px;
+        position: relative;
+    }
+    .boo img{
+        position: absolute;
+        top: 80px;
+        left: 300px;
+    }
+    .boo p{
+        color: white;
+    }
+.das span{
+    background: #FF9C01;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+    .das p{
+        font-size: 20px;
+    }
+
+    .das{
+        width: 750px;
+        position: absolute;left: 600px;top: 100px;
+    }
+</style>
+<div class="boo">
+<img src="imag/zya4.png">
+    <div class="das">
+        <h3 style="color:white;">守望先锋世界杯</h3>
+        <p>
+            守望先锋世界杯》汇集了全球各个国家和地区代表队，
+            而社区是推动这场电竞盛宴的关键。玩家投票选出代表委员会之后，
+            再由委员会选拔组成国家和地区最强战队的选手阵容。
+            代表队伍一路过关斩将，最终在暴雪嘉年华上演巅峰对决！
+        </p>
+        <span>查看《守望先锋世界杯》</span>
+    </div>
+</div>
+
+<script>
+    $(".daa1").hide();
+    $(".daa2").hide();
+    $(".daa3").hide();
+    $(".daa4").hide();
+   $(".da2").mouseenter(function(){
+       $(".da2").css("width","590px")
+       $(".da3").css("width","200px")
+       $(".da4").css("width","200px")
+       $(".da5").css("width","200px")
+      $(".daa1").show();
+       $(".daa2").hide();
+       $(".daa3").hide();
+       $(".daa4").hide();
+   });
+   $(".da3").mouseenter(function(){
+       $(".da2").css("width","200px")
+       $(".da3").css("width","590px")
+       $(".da4").css("width","200px")
+       $(".da5").css("width","200px")
+       $(".daa2").show();
+       $(".daa1").hide();
+       $(".daa3").hide();
+       $(".daa4").hide();
+   });
+
+   $(".da4").mouseenter(function(){
+       $(".da2").css("width","200px")
+       $(".da3").css("width","200px")
+       $(".da4").css("width","590px")
+       $(".da5").css("width","200px")
+       $(".daa3").show();
+       $(".daa1").hide();
+       $(".daa2").hide();
+       $(".daa4").hide();
+   });
+   $(".da5").mouseenter(function(){
+       $(".da2").css("width","200px")
+       $(".da3").css("width","200px")
+       $(".da4").css("width","200px")
+       $(".da5").css("width","590px")
+       $(".daa4").show();
+       $(".daa1").hide();
+       $(".daa2").hide();
+       $(".daa3").hide();
+   });
+    var imm=document.getElementById("im");
+    $("#im").mouseover(function(){
+        imm.setAttribute("src","img/zybb.png")
+    }).mouseout(function(){
+        imm.setAttribute("src","img/zyb3.png")
+    })
+    $(function(){
+        var me = $(".content");
+        me.hover(function(){
+            me.stop().animate({
+                width: "+=50px",
+                height: "+=50px",
+                lineHeight: "+=50px",
+                top: "-=25px",
+                left: "-=25px"
+            }, 500);
+        },function(){
+            me.stop().animate({
+                width: "-=50px",
+                height: "-=50px",
+                lineHeight: "-=50px",
+                top: "+=25px",
+                left: "+=25px"
+            }, 500);
+        });
+    });
+
+
+    var myVideo = document.getElementsByTagName('video')[0];
+    myVideo.pause();
+
+    $(".tx").hide();
+    $(".num1").hide();
+    $("#im").click(function(){
+        $(".tx").show();
+        $(".num1").show();
+        myVideo.play();
+    });
+    $(".num1").click(function(){
+        $(".tx").hide();
+        $(".num1").hide();
+        myVideo.pause();
+    });
+</script>
+<style>
+
+    .bott{
+        text-align: center;
+        background: black;
+
+    }
+    .clearFix{
+        font-style: normal;
+    }
+    .cprt{
+        color: grey;
+        font-size: 15px;
+    }
+
+
+</style>
+<div class="bott">
+    <img src="imag/wa2.png"/>
+    <img src="imag/wa1.png"/>
+    <div id="f-business" class="f-cb">
+        <p class="f-cs">
+            <a href=""class="cs-online" style="font-size: 15px">
+                <span class="icon icon-1"></span>在线客服</a>&nbsp;&nbsp;&nbsp;
+            <a href="" class="cs-Feedback" style="font-size: 15px">
+                <span class="icon icon-2"></span>反馈</a>&nbsp;&nbsp;&nbsp;
+            <a target="_blank" class="cs-joinUs" href="" style="font-size: 15px"><span class="icon icon-3"></span>加入我们</a>&nbsp;&nbsp;&nbsp;
+        </p>
+        <div class="foot-media" id="js_footMedia">
+            <dl style="display: none;">
+                <dt><span class="icon-media">合作媒体</span><span class="icon-more"><i></i></span></dt>
+                <dd><ul id="js_joiner"></ul></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cprt">
+        <a href="" class="logo_bz"></a>
+        <a  href="" class="logo_ne"></a>
+        <div class="info">
+            <p class="clearFix">
+                隐私|法律条款|API
+            </p>
+
+            <p>?2019 暴雪娱乐有限公司版权所有 <span>由上海网之易网络科技发展有限公司运营</span>
+                著作权侵权
+                &nbsp;|&nbsp;<span id="js_shenzi">新广出审[2016]378号</span>
+            </p>
+            <p><span id="js_wenjinwang">文网游进字[2016]0025号</span>&nbsp;|&nbsp;
+                沪网文号〔2017〕9633-727号
+                &nbsp;|&nbsp;
+                增值电信业务经营许可证编号：沪B2－20080012
+            </p>
+            <p>互联网违法和不良信息举报电话：0571-28090163&nbsp;沪公网安备 31011502022167号&nbsp;|&nbsp;
+                上海市网络游戏行业自律公约
+            </p>
+            <p class="integrity">
+                <a target="_blank" href="">
+                    <img src="imag/p1.png"></a>
+                <a target="_blank" href="">
+                    <img src="imag/p2.png"></a>
+
+                <a target="_blank" href="">
+                    <img src="imag/p3.png"></a>
+                <a target="_blank" href=""><img src="imag/p4.png"> </a>
+
+                <a target="_blank" href="">
+                    <img src="imag/p2.png"></a>
+                <span>| &nbsp;适龄提示：适合13岁及以上使用&nbsp;&nbsp;</span>
+                <a href="" target="_blank" style="font-size: 15px">家长监护工程&gt;</a>
+            </p>
+        </div>
+    </div>
+    <hr/>
+    <p class="tips" style="font-size: 10px">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。
+        <br>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p></div>
+</body>
+</html>

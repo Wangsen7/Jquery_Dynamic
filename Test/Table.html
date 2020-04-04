@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+
+
+<script type="text/javascript">
+    function focus_username() {
+        //获取id=result_username的对象
+        var resultObj=document.getElementById("result_username");
+        //写入提示信息
+        resultObj.innerHTML = "请输入您的用户名";
+        resultObj.style.color = "#ccc";
+        //给文本框加个边框
+        //document.form1.username.style="border:1px solid #49bde0";
+    }
+    function blur_username() {
+        //获取id=result_username的对象
+        var resultObj = document.getElementById("result_username");
+        //用户名验证
+        if(document.form1.username.value=="") {
+            resultObj.innerHTML="用户名不能为空";
+            resultObj.style.color="red";
+            return false;
+        } else if(document.form1.username.value.length<5||document.form1.username.value.length>20) {
+            resultObj.innerHTML="用户名长度必须介于5-20字符之间";
+            resultObj.style.color="red";
+            return false;
+        } else {
+            resultObj.innerHTML="<img src='img/ok.png'/>";
+            return true;
+        }
+    }
+
+    function focus_userpwd() {
+        //获取id=result_username的对象
+        var resultObj=document.getElementById("result_userpwd");
+        //写入提示信息
+        resultObj.innerHTML = "请输入您的密码";
+        resultObj.style.color = "#ccc";
+        //给文本框加个边框
+        document.form1.userpwd.style="border:1px solid #49bde0";
+    }
+    function blur_userpwd() {
+        //获取id=result_username的对象
+        var resultObj = document.getElementById("result_userpwd");
+        document.form1.userpwd.style="border:1px solid #ccc;background:none;";
+        //用户名验证
+        if(document.form1.userpwd.value=="") {
+            resultObj.innerHTML="密码不能为空";
+            resultObj.style.color="red";
+            return false;
+        } else if(document.form1.userpwd.value.length<5||document.form1.userpwd.value.length>20) {
+            resultObj.innerHTML="密码长度必须介于5-20字符之间";
+            resultObj.style.color="red";
+            return false;
+        } else {
+            resultObj.innerHTML="<img src='img/ok.png'/>";
+            return true;
+        }
+    }
+    function checkForm() {
+        var flag_username = blur_username();
+        var flag_userpwd = blur_userpwd();
+        if (flag_username==true&&flag_userpwd==true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+</head>
+<body>
+<form action="login.php" method="get" name="form1" onsubmit="return checkForm()">
+    <table width="600" border="1"  align="center" rules="all" cellpadding="5" background="#ccc">
+        <tr>
+            <td width="100" align="right">用户名：</td>
+            <td><input type="text" name="username" onfocus="focus_username()" onblur="blur_username()"></td>
+            <td width="300"><div id="result_username"></div></td>
+        </tr>
+        <tr>
+            <td  align="right">密码：</td>
+            <td><input type="password" name="userpwd" onfocus="focus_userpwd()" onblur="blur_userpwd()"></td>
+            <td ><div id="result_userpwd"></div></td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td colspan="2">
+                <input type="submit" value="提交表单">
+                <input type="reset" value="重置">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>

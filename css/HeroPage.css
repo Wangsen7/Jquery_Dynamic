@@ -1,0 +1,199 @@
+
+/*头部下面的圈圈*/
+.ability-showcase {
+    height: 900px;
+}
+.uu>li {
+    width: 130px;
+    height: 130px;
+    list-style: none;
+    float: left;
+}
+.uu>li>img {
+    background: rgba(72, 81, 110, .7);
+}
+.uu {
+    position: absolute;
+    bottom: 20px;
+    left: 450px;
+}
+.logotext {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: solid white;
+    position: relative;
+    bottom: 105px;
+    left: 25px;
+}
+
+
+.show-for-xl {
+    padding: 0px;
+    margin: 0px;
+
+}
+
+#showvid {
+    margin: 0px;
+    padding: 0px;
+    width: 99.9%;
+}
+
+.blog-index a {
+    color: #f0edf2;
+}
+.nav-right {
+    background-color: rgb(247, 147, 30);
+}
+
+.home-header__logotext {
+    height: 45px;
+}
+
+.nav-btn.m-highlight {
+    font-size: 10px;
+}
+
+
+
+.yans2 {
+    height: 20px;
+    background: grey;
+}
+.yans1 {
+    height: 40px;
+    width: 800px;
+    background: rgba(154, 160, 179, .6);
+    position: absolute;
+    bottom: 0.1px;
+    border-radius: 0px 200px 0 0;
+
+}
+.yans3 {
+    height: 40px;
+    width: 800px;
+    background: rgba(154, 160, 179, .6);
+    position: absolute;
+    bottom: 0.1px;
+    left: 1110px;
+    border-radius: 200px 0px 0 0;
+}
+
+.bod {
+    position: relative;
+    height: 1000px;
+    background: url("imag/body2.jpg") no-repeat;
+    background-size: cover;
+    -moz-background-size: cover;
+
+}
+.gk {
+    width: 300px;
+    height: 50px;
+    background: rgba(68, 82, 113, .8);
+    position: absolute;
+    left: 290px;
+    top: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.gs {
+    width: 300px;
+    height: 50px;
+    background: rgba(19, 42, 77, 0.6);
+    position: absolute;
+    left: 600px;
+    top: 40px;
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+
+.gsb {
+    height: 850px;
+    width: 610px;
+    background: rgba(19, 42, 77, 0.6);
+    position: absolute;
+    left: 290px;
+    top: 90px;
+
+}
+
+.gsb ul li {
+    font-size: 20px;
+    color: white;
+    list-style: none;
+}
+
+h3 {
+    color: #4db3f5;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.gsb p {
+    font-size: 18px;
+    color: white;
+    width: 550px;
+    margin-left: 20px;
+}
+
+.boe {
+    height: 400px;
+    background: #F0EDF2;
+}
+
+.gss {
+    height: 880px;
+    width: 610px;
+    background: rgba(19, 42, 77, 0.6);
+    position: absolute;
+    left: 290px;
+    top: 90px;
+}
+
+ul li {
+    list-style: none;
+}
+
+.gss p {
+    width: 550px;
+    color: white;
+    margin-left: 20px;
+    font-size: 20px;
+}
+
+.logotext {
+    height: 65px;
+    width: 65px;
+    border-radius: 50%;
+    border: solid white;
+}
+
+.jine {
+    margin-bottom: 100px;
+}
+
+.jine li {
+    float: right;
+    padding-bottom: 10px;
+    width: 500px;
+}
+
+.jine li p {
+    width: 450px;
+}
+
+.jn {
+    float: left;
+    width: 80px;
+    margin-top: 70px;
+}
+
+.jn img {
+    float: left;
+    margin-top: 40px;
+}

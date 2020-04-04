@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<style>
+
+    body {
+        color: #333;
+        fill: #333;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color:rgb(40,53,79) ;
+        max-width: 100%;
+        overflow-x: hidden;
+        font: normal normal normal 10px "microsoft yahei",Arial,sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    .row{
+        position: absolute;left: 700px;top: 300px;
+    }
+    .u-relative{
+        position: relative;right:160px;bottom: 30px;
+    }
+    .hide2{
+        margin-left:180px;
+
+    }
+    .ideo1{
+        margin-left:180px;
+    }
+    .show-for-xl{
+        padding: 0px;
+        margin: 0px;
+
+    }
+    #showvid{
+        margin: 0px;
+        padding: 0px;
+        width: 99.9%;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+    }
+    .navbars {
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color:rgba(128,128,128,.8);
+    }
+    blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav[role=main] {
+        background-color: #f2f1ed;
+        position: relative;
+        z-index: 96;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    nav[role=main] .nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    nav[role=main] .nav-left {
+        float: left;
+        font-size: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    ul {
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 1.25rem;
+    }
+    dl, ol, ul {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        list-style-position: outside;
+    }
+    nav[role=main] .nav-btn {
+        height: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0 solid transparent;
+        box-sizing: border-box;
+        font-size: 20px;
+        padding: 0 20px;
+        text-transform: none;
+        color: white;
+        text-align: center;
+        text-shadow: none;
+        letter-spacing: .05em;
+        position: relative;
+        cursor: pointer;
+        border-right: 1px solid grey;
+        -webkit-transition: background-color .2s;
+        transition: background-color .2s;
+    }
+    .blog-index a {
+        color: #f0edf2;
+    }
+
+    a {
+        color: #f7931e;
+        text-decoration: none;
+        line-height: inherit;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    nav[role=main].nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    nav[role=main] .nav-right {
+        float: right;
+        font-size: 0;
+        margin: 0;
+        height: 48px;
+    }
+
+
+
+
+
+    nav[role=main] .nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    nav[role=main] .nav-menu.m-sub-menu li {
+        display: block;
+    }
+    nav[role=main] .nav-menu li {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+    li {
+        font-size: inherit;
+    }
+    .nav-right{
+        background-color:rgb(247, 147, 30);
+    }
+    .home-header__logotext{
+        height: 45px;
+    }
+    #gotop {
+        width: 40px;
+        height: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(255,255,255,.25);
+        color: #000;
+        line-height: 30px;
+        text-align: center;
+        font-size: 12px;
+        z-index: 501;
+        display: none;
+        cursor: pointer;
+    }
+    .tx{
+        background: rgba(3,12,21,.98);;
+        width: 80%;
+        height: 80%;
+        position: fixed;top: 12%;left: 10%;
+        z-index: 998;
+    }
+    .num1 {
+        color: #00c3ff;
+        font-size: 70px;
+        position: fixed;top: 12%;left: 86%;
+        z-index: 999;
+    }
+    .nav-btn.m-highlight {
+        font-size: 10px;
+    }
+</style>
+<style>
+    nav[role=main] .nav-menu.m-sub-menu {
+        margin: 0;
+        background-color: #353c42;
+        position: absolute;
+        top: 100%;
+        min-width: 160px;
+        left: 0;
+        height: auto;
+        z-index: 99;
+        display: none;
+    }
+    nav[role=main] .nav-btn.m-open, nav[role=main] .nav-btn:hover {
+        background-color: #353c42;
+        -webkit-transition: none;
+        transition: none;
+        color: #ff9c00;
+    }
+    .ability-showcase{
+        height: 900px;
+    }
+
+    .uu li{
+        width: 130px;
+        height: 130px;
+        list-style: none;
+        float: left;
+    }
+    .uu li img{
+        background: rgba(72,81,110,.7);
+    }
+    .uu{
+        position: absolute;
+        bottom: 20px;
+        left: 450px;
+    }
+    .logotext{
+        height: 65px;
+        width: 65px;
+        border-radius:50%;
+        border: solid white;
+        position: relative;bottom: 105px;left: 25px;
+    }
+
+</style>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(document).ready(function(){
+        var sticky = document.querySelector('.navbars');
+        var origOffsetY = sticky.offsetTop;
+
+        function onScroll(e) {
+            window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
+                    sticky.classList.remove('fixed');
+        }
+
+        document.addEventListener('scroll', onScroll);
+    });
+    $("li a").mouseover(function(){
+        $(this).css({"background-color":"black"})
+    }).mouseout(function(){
+        $(this).css({"background-color":"rgba(40,53,79,.8)"});
+    });
+
+    $(function(){
+        $(".nav-menu.nav-left>li").hover(function(){
+            $(this).find("ul").show();
+        },function(){
+            $(this).find("ul").hide();
+        }) ;
+    });
+
+</script>
+<style>
+    .bott{
+        text-align: center;
+        background: black;
+
+    }
+    .clearFix{
+        font-style: normal;
+    }
+    .cprt{
+        color: grey;
+        font-size: 15px;
+    }
+
+
+</style>
+<style>
+    .boo{
+        height: 3600px;
+        background: url("imag/xwoa.jpg")no-repeat;
+        background-size: cover;
+        text-align: center;
+        position: relative;
+    }
+    .bo{
+        width: 100%;
+        position: absolute;
+        top: 100px;
+        text-align: center;
+    }
+    .bo2{
+        position: absolute;top: 1800px;left: 380px;
+        width: 60%;
+        color: white;
+        text-align: center;
+        border-top: 2px solid grey;
+    }
+    .bo2 p{
+        font-size: 15px;
+
+    }
+</style>
+<div class="boo">
+    <div class="navbars">
+        <nav role="main" class=""style="max-width:1600px;" >
+            <div class="nav-left">
+                <a href="Home-Page.html"><img src="imag/01.png" class="home-header__logotext"></a>
+            </div>
+            <ul class="nav-menu nav-left">
+                <li>
+                    <a href="javascript:void(0);" class="nav-btn m-has-children">游戏</a>
+                    <ul class="nav-menu m-sub-menu">
+                        <li><a href="" class="nav-btn m-highlight">概述</a></li>
+                        <li><a href="" class="nav-btn m-highlight">赞赏系统</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="nav-btn ">英雄</a></li>
+                <li>
+                    <a href="javascript:void(0);" class="nav-btn m-has-children">活动</a>
+                    <ul class="nav-menu m-sub-menu">
+                        <li><a href="">夏季运动会</a></li>
+                        <li><a href="" class="nav-btn m-highlight">行动档案</a></li>
+                        <li><a href="" class="nav-btn m-highlight">欢度新春</a></li>
+                        <li><a href="" class="nav-btn m-highlight">雪国仙境</a></li>
+                        <li><a href="" class="nav-btn m-highlight">万圣夜惊魂</a></li>
+                        <li><a href="" class="nav-btn m-highlight">周年庆典</a></li>
+                        <li><a href="" class="nav-btn m-highlight">国王行动</a></li>
+                    </ul>
+                </li><li><a href="" class="nav-btn ">视频图片</a></li>
+                <li>
+                    <a href="News-details.html" class="nav-btn m-has-children">新闻</a>
+                    <ul class="nav-menu m-sub-menu">
+                        <li><a href="" class="nav-btn m-highlight m-active">新闻</a></li>
+                        <li><a href="" class="nav-btn m-highlight">补丁</a></li>
+                    </ul>
+                </li>
+                <li><a href="" class="nav-btn">下载</a></li>
+                <li>
+                    <a href="" class="nav-btn m-has-children">电子竞技</a>
+                    <ul class="nav-menu m-sub-menu">
+                        <li><a href="">概述</a></li>
+                        <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋公开争霸赛</a></li>
+                        <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋挑战者选拔赛</a></li>
+                        <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋挑战者系列赛</a></li>
+                        <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋联赛</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="javascript:void(0);" class="nav-btn m-has-children">社区</a>
+                    <ul class="nav-menu m-sub-menu">
+                        <li><a href="" class="nav-btn m-highlight">生涯数据</a></li>
+                        <li><a href="" class="nav-btn m-highlight">我们身边的英雄</a></li>
+                        <li><a href="" target="_blank" class="nav-btn m-highlight">论坛</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div class="nav-right"><a href="Shopping-mail.html" target="_blank" class="nav-btn m-orange m-big">购买</a></div>
+        </nav>
+    </div>
+    <div class="bo">
+    <h2 style="color: white">
+        「本地新闻」堂·朗博蒂科品牌享誉国际，但品牌创始人却正在淡出人们的视线</h2>
+        <br/><br/><br/>
+    <img src="imag/xwo.jpg">
+    </div>
+
+        <div class="bo2">
+            <h5>本报翻译如下：</h5>
+
+            被遗忘的本地遗产<br/>
+            堂·朗博蒂科品牌享誉国际，但品牌创始人却正在淡出人们的视线<br/>
+            作者：玛瑞斯·索利斯<br/>
+        <p>
+            如今，堂·朗博蒂科可谓世人皆知。开启尊贵生活，入口皆是佳酿。
+            它的广告永远是温暖而丰富的配色，品牌的标志则是一位衣着体面的智械。
+            但在哈瓦那之外，这家酿酒厂生根发芽的发源地和近来充满争议的变故却鲜有人知。<br/><br/>
+
+            “堂·朗博蒂科没想过要做大品牌，”艾丽西娅·迪亚兹说道。她是酒厂世代相传的继承人，
+            品牌创始人相隔多代的重孙女。我和她坐在一家当地的酒吧里，窗外巨大的广告牌上是堂·朗博蒂科的广告
+            ——入口皆是佳酿！“过去，品质才是我们真正的追求。”<br/><br/>
+            大约两个世纪以前，克拉拉和巴西利奥·迪亚兹用他们的积蓄开办了一家小型的朗姆酿酒厂。
+            这是一家非常淳朴的家庭式酒厂，主要出产小瓶的桶装陈酿朗姆酒。在2060年之前，虽然堂·
+            朗博蒂科在古巴之外鲜有人知，但在哈瓦那可谓家喻户晓。艾丽西娅也像她的先辈一样，
+            是朗姆酒酿造专家。经典的堂·朗博蒂科配方一直是这个家族的家传秘方，也是古巴人最爱的佳酿。
+            <br/><br/>
+            但是近些年情况出现了变化。一家匿名财团曾表示有意收购公司和酿酒厂。“他们开的价很高，
+            ”艾丽西娅说道。“我们的人生都会因此而改变。但堂·朗博蒂科是我家族的遗产，这不是用金钱可以衡量的。”
+            一开始，迪亚兹家族拒绝了收购。但之后朗姆酒的运输就开始出现了货品丢失的情况。
+            酿酒厂也因为一次可疑的纵火案而付之一炬，迪亚兹家族变得一无所有，被迫以低价卖出了自己的公司。<br/><br/>
+
+            如今的堂·朗博蒂科已成为享誉世界的国际品牌，而它不幸的过往则被涂脂抹粉，
+            用来博得大家的同情心。酒瓶标签上巴西利奥·迪亚兹温暖而熟悉的面容已不复存在，
+            取而代之的是闪亮的金属面容。酒厂虽被重建，配方却已截然不同。“
+            味道的区别一尝就知道。口感完全不一样，”艾丽西娅说道。<br/><br/>
+
+            堂·朗博蒂科也并不是唯一一家突遭变故的当地知名品牌。哈瓦那海港要塞是当地的历史地标，
+            数百年来一直受到古巴政府的保护。但是两年前，它同样被收购了堂·朗博蒂科的集团买下，
+            成为了私人财产。就像朗姆酿酒厂一样，这座海港要塞也已经面目全非。如今要塞的地面上有警戒的安保巡逻，
+            天空中有陌生的直升机往来，大门在可见的未来也依然会对公众紧闭。<br/><br/>
+
+            “哈瓦那的面貌正在改变，”艾丽西娅说道。在我们对话的时候，她一直都没有碰过酒杯。
+            堂·朗博蒂科从窗外的广告牌上俯视着我们，软呢帽的帽檐在他金属的脸庞上留下了一片阴影。
+            “有时我感觉我们正在失去自己的一部分。也许我们已经失去了。”
+        <p/>
+            <h3>飓风费尔南德即将席卷古巴</h3>
+            <h4>作者：埃尔曼多·艾维拉兹</h4>
+
+           <p> 飓风费尔南德周二从大西洋席卷而来，在佛罗里达州沿海造成了洪水，
+               并朝南袭向巴哈马群岛。此次的3级风暴将于周四袭击瓜达拉瓦卡，
+               并沿海岸线向哈瓦那移动。预计风速将高达每小时193公里，届时将伴有巨浪。<br/>
+            海岸线附近的居民正在疏散。飓风费尔南德预计将造成大规模破坏，
+               甚至会殃及内陆地区。“这次的风暴规模不小，”
+               地方负责人奥里奥尔·德尔加多昨日在记者招待会上警告道。<br/>
+               “危险状况不会很快就结束，请采取一切预防措施保障自身安全，
+               如有可能，请尽快前往内陆地区。”
+        </p>
+    </div>
+    <style>
+        *{margin: 0; padding: 0; font-family: "Arial", "微软雅黑";}
+        ul,li{list-style: none;}
+        .bbs{margin: 0 auto; width: 600px; }
+        header{padding: 5px 0; border-bottom: 1px solid #cecece;}
+        header span{display:inline-block; width: 220px; height: 50px; color: #fff; background: #FF9C00; font-size: 18px; font-weight: bold; text-align: center;line-height: 50px; border-radius: 8px; cursor: pointer;}
+        .post{position: absolute; background: #ffffff; border: 1px #999999 solid; width: 500px; left: 65px; top:70px; padding: 10px; font-size: 14px; z-index: 999999; display: none;}
+        .post .title{width: 450px; height:30px; line-height: 30px; display: block; border: 1px #aaaaaa solid; margin-bottom: 10px;}
+        .post select{width: 200px; height: 30px;}
+        .post .content{width: 450px; height: 200px; display: block; margin: 10px 0;border: 1px #aaaaaa solid;}
+        .post .btn{width: 160px; height: 35px; color: #fff; background: #009966; border: none; font-size: 14px; font-weight: bold; text-align: center; line-height: 35px; border-radius: 8px; cursor: pointer;}
+
+        .bbs section ul li{padding: 10px 0; border-bottom: 1px white dashed;
+            overflow: hidden;}
+        .bbs section ul li div{float: left; width: 60px; margin-right: 10px;}
+        .bbs section ul li div img{ border-radius:50%; width: 60px;}
+        .bbs section ul li h1{float: left; width: 520px; font-size: 16px; line-height: 35px;}
+        .bbs section ul li p{color: #666666; line-height: 25px; font-size: 12px; }
+        .bbs section ul li p span{padding-right:20px;}
+
+        .bbs{
+            position: absolute;
+            top: 2700px;
+            left:630px;
+        }
+    </style>
+
+    <div class="bbs">
+        <header><span id="ft">我要发帖</span></header>
+        <section>
+            <ul class="aad">
+                <li>
+                    <div>
+                        <img src="imag/ManT15.png">
+                    </div>
+                    <h1>总结猜测</h1>
+                    <p>
+                        <span>区服：自由之翼</span>
+                        <span>发表时间：2018-3-1 9:39</span>
+                    </p>
+                </li>
+            </ul>
+
+        </section>
+        <div class="post">
+            <input class="title" placeholder="请输入标题（1-50个字符）">
+            所属版块：<select class="bk"><option>白银之鹰</option><option>自由之翼</option><option>神圣之星</option><option>梦想天空</option><option>无畏之海</option></select>
+            <textarea class="content"></textarea>
+            <input class="btn" value="发布"aa>
+        </div>
+    </div>
+    <script src="js/jquery-1.12.4.js"></script>
+    <script>
+        $("#ft").click(function(){
+            $(".post").show();
+        });
+        var heaInd=new Array("ManT15.png");
+        var iNum=Math.floor(Math.random()*4);
+        $(".btn").click(function(){
+            var $li=$("<li></li>")
+            var touimg=$("<div><img src="+heaInd+"imag/></div>")
+            var title=$("<h1>"+$(".title").val()+"</h1>")
+            var $pp=$("<p>区服："+$(".bk").val()+"</p>")
+            $(touimg).appendTo($li)
+            $(title).appendTo($li)
+            $($pp).appendTo($li);
+
+            $($li).appendTo(".aad")
+
+            $(".post").hide();
+        });
+    </script>
+</div>
+<div class="bott">
+    <img src="imag/wa2.png"/>
+    <img src="imag/wa1.png"/>
+    <div id="f-business" class="f-cb">
+        <p class="f-cs">
+            <a href=""class="cs-online" style="font-size: 15px">
+                <span class="icon icon-1"></span>在线客服</a>&nbsp;&nbsp;&nbsp;
+            <a href="" class="cs-Feedback" style="font-size: 15px">
+                <span class="icon icon-2"></span>反馈</a>&nbsp;&nbsp;&nbsp;
+            <a target="_blank" class="cs-joinUs" href="" style="font-size: 15px"><span class="icon icon-3"></span>加入我们</a>&nbsp;&nbsp;&nbsp;
+        </p>
+        <div class="foot-media" id="js_footMedia">
+            <dl style="display: none;">
+                <dt><span class="icon-media">合作媒体</span><span class="icon-more"><i></i></span></dt>
+                <dd><ul id="js_joiner"></ul></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cprt">
+        <a href="" class="logo_bz"></a>
+        <a  href="" class="logo_ne"></a>
+        <div class="info">
+            <p class="clearFix">
+                隐私|法律条款|API
+            </p>
+
+            <p>?2019 暴雪娱乐有限公司版权所有 <span>由上海网之易网络科技发展有限公司运营</span>
+                著作权侵权
+                &nbsp;|&nbsp;<span id="js_shenzi">新广出审[2016]378号</span>
+            </p>
+            <p><span id="js_wenjinwang">文网游进字[2016]0025号</span>&nbsp;|&nbsp;
+                沪网文号〔2017〕9633-727号
+                &nbsp;|&nbsp;
+                增值电信业务经营许可证编号：沪B2－20080012
+            </p>
+            <p>互联网违法和不良信息举报电话：0571-28090163&nbsp;沪公网安备 31011502022167号&nbsp;|&nbsp;
+                上海市网络游戏行业自律公约
+            </p>
+            <p class="integrity">
+                <a target="_blank" href="">
+                    <img src="imag/p1.png"></a>
+                <a target="_blank" href="">
+                    <img src="imag/p2.png"></a>
+
+                <a target="_blank" href="">
+                    <img src="imag/p3.png"></a>
+                <a target="_blank" href=""><img src="imag/p4.png"> </a>
+
+                <a target="_blank" href="">
+                    <img src="imag/p2.png"></a>
+                <span>| &nbsp;适龄提示：适合13岁及以上使用&nbsp;&nbsp;</span>
+                <a href="" target="_blank" style="font-size: 15px">家长监护工程&gt;</a>
+            </p>
+        </div>
+    </div>
+    <hr/>
+    <p class="tips" style="font-size: 10px">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。
+        <br>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p></div>
+
+
+
+
+</body>
+</html>

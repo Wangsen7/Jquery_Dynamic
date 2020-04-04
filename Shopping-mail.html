@@ -1,0 +1,531 @@
+<page contentType="text/html; charset=UTF-8" xmlns="http://www.w3.org/1999/html"></page>
+<html>
+<head>
+    <title>《守望先锋》商城</title>
+    <style>
+
+    </style>
+</head>
+<body class="home" id="top">
+<style>
+    body{
+        width: 100%;
+        height: 100%;
+        display: block;
+        background: #002650;
+        position:absolute;left:0px;top:0px;width:100%;height:100%;
+        /*隐藏横向滚动条*/
+        overflow-x: hidden;
+    }
+    .fixed {
+        position: fixed;
+        top: 0;
+    }
+    .navbars {
+        height: 60px;
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color:rgba(40,53,79,.8);
+        float: left;
+    }
+     .ma{
+         margin: 0px;
+         padding: 0px;
+         width: 100%;
+     }
+    .mn1{
+        margin: 0px;
+        padding: 0px;
+        background: url("imag/ManT7.png");
+        z-index: 500;
+        width: 100%;
+        height: 400px;
+        border-bottom: solid;
+
+    }
+    .min3{
+        margin: 0px;
+        padding: 0px;
+        background: url("imag/ManT8.png");
+        width: 100%;
+        height: 60px;
+    }
+
+    .im2{
+
+        height: 50px;
+        margin-top: 10px;
+        margin-left: 20px;
+    }
+    a{
+        text-decoration: none;
+    }
+    .tit{
+        position: relative;left: 85%;bottom:65px;
+    }
+    .tit a{
+        font-size: 20px;
+        color: rgba(255,255,255,.5);
+    }
+    .sc{
+        font-size: 20px;
+        color: rgba(255,255,255,.5);
+        position: relative;left: 2%;bottom: 20px;
+    }
+    ul{
+        list-style: none;
+    }
+.nth-on{
+    width: 100%;
+    height: 300px;
+    background: url("imag/ManT1.jpg");
+    position: relative;top: 60px;
+}
+.nth-db{
+    background: red;
+    background: url("imag/ManT8.png");
+    height: 80px;
+    width: 100%;
+    border-bottom: 1px solid grey;
+}
+    .nth-bb{
+        background: url("imag/ManT7.png");
+        width: 100%;
+        height: 600px;
+        border-bottom: 1px solid grey;
+    }
+    .nth-bc{
+        background: url("imag/ManT7.png");
+        width: 100%;
+        height: 300px;
+    }
+    .my{
+        width: 318px;
+        height: 160px;
+        position: absolute;right: 140px;top: 50px;
+        z-index: 700;
+        background: #1A202B;
+        border: 0.2px solid grey;
+    }
+    .o1{
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        font-size: 15px;
+        opacity: 0.8;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        padding-left: 90px;
+        padding-right: 90px;
+        background:#0E92DC ;
+        position: absolute;bottom: 100px;left: 50px;
+    }
+    .o2{margin: 0px;
+        padding: 0px;
+        color: white;
+        font-size: 15px;
+        opacity: 0.8;
+        padding-bottom: 15px;
+        position: absolute;bottom: 35px;left: 40px;
+    }
+    .o3{
+        margin: 0px;
+        padding: 0px;
+        color: white;
+        font-size: 15px;
+        opacity: 0.8;
+       position: absolute;bottom: 15px;left: 40px;
+
+
+    }
+</style>
+<script src="js/jquery-1.12.4.js"></script>
+<script>
+    $(document).ready(function(){
+        $(".nav-btn").hide();
+
+        var sticky = document.querySelector('.navbars');
+        var origOffsetY = sticky.offsetTop;
+
+        function onScroll(e) {
+            window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
+                    sticky.classList.remove('fixed');
+        }
+        document.addEventListener('scroll', onScroll);
+    });
+</script>
+<style>
+    .desktop-search[_ngcontent-c18] input {
+        transition: padding-top .2s ease,padding-bottom .2s ease;
+    }
+    .search-field[_ngcontent-c25] input[_ngcontent-c25] {
+        background-color: transparent!important;
+        width: 100%;
+        color: rgba(255,255,255,.8);
+        font-size: 14px;
+        padding-left: 1.5rem;
+    }
+    .search-field[_ngcontent-c25] .search-icon[_ngcontent-c25] {
+        color: #0e86ca;
+        transition: color .2s;
+    }
+   .desktop-search {
+        display: block;
+        width: 30%;
+       height: 40px;
+        background-color: #001732;
+        border: 1px solid rgba(255, 255, 255, .15);
+        padding: 0 13.5px;
+       position: relative;
+       left: 800px;
+       top: 10px;
+    }
+    .inputa{
+        display: block;
+        border: none;
+        margin-top: 10px;
+    }
+    .dinshu{
+      position: relative;bottom: 40px;left: 80%;
+    }
+    .dinshu p{
+        color: white;
+    }
+    .dinshu ul li{
+        padding-top: 20px;
+    }
+    .dinshu ul{
+        background-color:rgb(40,53,79);
+        width: 180px;
+        height: 230px;
+        position: relative;top: 5px;
+        z-index: 600;
+
+    }
+    .dinshu ul img{
+        float: left;
+    }
+    .form-group1{
+       position: absolute;
+        top: 320px;right: 200px;
+    }
+    .form-group2{
+        position: absolute;
+        top: 320px;right: 400px;
+    }
+    .mr{
+
+        color: white;
+    }
+    .ng-star{
+        background-color:rgb(40,53,79);
+        color: white;
+    }
+    .no{
+        margin: 0px;
+        padding: 0px;
+        position: absolute;
+        top: 320px;left: 60px;
+    }
+    .nt{
+       color:  #718397;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+</style>
+    <div class="Ma">
+        <div class="mn1">
+            <div class="min3">
+                <a href="Home-Page.html"><img src="imag/wa2.png" class="im2" style="z-index:500" /></a>
+                <a href="" class="sc">商城</a>
+                <p class="tit">
+                <a href="">支持</a>&nbsp;&nbsp;&nbsp;
+                <a class="wode" style="cursor: pointer;">我的账户</a>
+                    <div class="my">
+                        <span class="o1"><a href="Login.html" style="color: white">登陆</a></span>
+                        <span class="o2"><img src="imag/2200.png">账户</span>
+                        <span class="o3"><img src="imag/2201.png">免费注册</span>
+                    </div>
+                </p>
+                <img src="imag/wwa.png" style="z-index:600;position: absolute;height: 200px;margin-top: 30px;margin-left: 40px"/>
+            </div>
+            <div class="navbars">
+                <div _ngcontent-c18="" class="desktop-search">
+                    <img src="imag/212.png" style="position: absolute;top: 8px">
+                        <div _ngcontent-c25="" class="search-field">
+                            <form _ngcontent-c25="" novalidate="" class="ng-untouched ng-pristine ng-valid">
+                                <label _ngcontent-c25="" for="search-desktop-input">
+                                </label>
+                                <input _ngcontent-c25="" autocapitalize="off" autocomplete="off" autocorrect="off" class="inputa" spellcheck="false" id="search-desktop-input" placeholder="搜索商城" role="combobox" aria-autocomplete="list" aria-expanded="false">
+                            </form>
+                        </div>
+                </div>
+                <div class="dinshu">
+                   <p>心愿单<a class="dian"  style="cursor: pointer;margin-left: 40px;border-left: 1px solid grey; padding-top: 18px;padding-bottom: 18px;padding-left: 10px;color: white">暴雪游戏点数</a></p>
+                    <ul>
+                        <li><img src="imag/dian1.png"/>&nbsp;<a href="" style=" color: white;">充值点数</a></li>
+                        <li><img src="imag/dian2.png"/>&nbsp;<a href="" style=" color: white;">赠送点数</a></li>
+                        <li><img src="imag/dian3.png"/>&nbsp;<a href="" style=" color: white;">兑换点卡</a></li>
+                        <li><img src="imag/dian4.png"/>&nbsp;<a href="" style=" color: white;">充值历史</a></li>
+                        <li><img src="imag/dian6.png"/>&nbsp;<a href="" style=" color: white;">暴雪点数帮助</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="nth-on">
+                <p class="no"><span class="nt">游戏</span><span class="nt">可解锁内容</span><span class="nt">周边</span></p>
+                <div _ngcontent-c21="" class="form-group1"><label _ngcontent-c21="" class="mr"for="browse">
+                    分组方式 </label>&nbsp;&nbsp;&nbsp;
+                    <select _ngcontent-c21="" class="custom"
+                                         id="browse" style="background-color: #001732; color: white"><!---->
+                    <option _ngcontent-c21="" value="1" class="ng-star">按类别分组</option>
+                    <option _ngcontent-c21="" value="0" class="ng-star">不分组</option>
+                </select></div>
+
+                <div _ngcontent-c21="" class="form-group2"><label _ngcontent-c21="" class="mr" for="browse-"> 排序方式 </label>&nbsp;&nbsp;&nbsp;
+                    <select _ngcontent-c21="" class="custom" id="browse-" style="background-color: #001732; color: white">
+                    <option _ngcontent-c21="" value="0" class="ng-star"> 精选</option>
+                    <option _ngcontent-c21="" value="1" class="ng-star"> 价格：最低</option>
+                    <option _ngcontent-c21="" value="2" class="ng-star"> 价格：最高</option>
+                    <option _ngcontent-c21="" value="3" class="ng-star"> 折扣</option>
+                    <option _ngcontent-c21="" value="4" class="ng-star"> 名称</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<script>
+    $(".nt").mouseover(function(){
+        $(this).css("color","rgb(255,255,255)");
+    }).mouseout(function(){
+        $(this).css("color","#718397");
+    });
+    $(".dinshu ul").hide();
+    $(".dian").on( 'click', function(e) {
+        $(".dinshu ul").toggle();
+    } );
+    $(".my").hide();
+    $(".wode").on( 'click', function(e) {
+        $(".my").toggle();
+    } );
+</script>
+<style>
+    .nth-bc{
+        text-align: center;
+        color: white;
+    }
+    .ch-o{
+        height: 450px;
+        width: 300px;
+        float: left;
+        border: 1px;
+    }
+.ch-o{
+    margin-top: 80px;
+    margin-left: 30px;
+}
+.ch{
+    height: 450px;
+    width: 300px;
+    float: left;
+    margin-top: 60px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 40px;
+}
+
+</style>
+<div class="bodyy">
+    <!--顶部-->
+    <div class="nth-db"></div>
+    <div class="ch" style="background-color: #002650;margin-left:200px;border: none;height: 200px;">
+        <p style="color: white"><span style="font-size: 30px">游戏</span><br><br>
+            置身明日战场，在活力四射的团队射击游戏中为了未来而战。</P>
+    </div>
+
+    <div class="nth-bb">
+        <div class="ch-o"
+             style="background: url('imag/ManT13.jpg') no-repeat; background-size: contain;background-color: #737A96">
+            <p style="margin-top: 180px">
+                &nbsp;&nbsp;&nbsp;<img src="imag/wang.png" style="width: 60px;height: 60px">
+                <br/>
+                &nbsp;&nbsp;<span style="color: white;font-size: 20px">《守望先锋》：传奇典藏版</span>
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="color:#FF8A00">传奇典藏版</span>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="color: #9A9FB3;font-size: 20px">团队射击游戏</span>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="font-size: 20px;color: white">￥158</span>
+            </p>
+        </div>
+        <div class="ch-o"
+             style="background: url('imag/ManT9.jpg')no-repeat; background-size: contain;background-color: #1B1B1B">
+            <p style="margin-top: 180px">
+                &nbsp;&nbsp;&nbsp;<img src="imag/wang.png" style="width: 60px;height: 60px">
+                <br/>
+                &nbsp;&nbsp;<span style="color: white;font-size: 20px">《守望先锋》：数字畅玩版</span>
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="color:#FF8A00">无限畅玩包</span>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="color: #9A9FB3;font-size: 20px">团队射击游戏</span>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="font-size: 20px;color: white">￥98</span>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="nth-bb">
+        <div class="ch" style="background-color:#002650;margin-left:200px;border: none;height: 200px">
+            <p style="color: white"><span style="font-size: 30px">可解锁内容</span><br><br>
+                让各种虚拟好礼提升你的游戏体验。</p>
+        </div>
+        <div class="ch-o"
+             style="background: url('imag/ManT11.jpg')no-repeat; background-size: contain;background-color:#0F0F11">
+            <p style="margin-top: 180px">
+                &nbsp;&nbsp;&nbsp;<img src="imag/wang.png" style="width: 60px;height: 60px">
+                <br/>
+                &nbsp;&nbsp;<span style="color: white;font-size: 20px">《守望先锋》：游戏货币：赠<br/>&nbsp;&nbsp;送补给</span>
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="color:#9A9FB3">可解锁内容</span>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="font-size: 20px;color: white">￥12起</span>
+            </p>
+        </div>
+        <div class="ch-o" style="background-color:#000000">
+            <p style="margin-top: 180px">
+                &nbsp;&nbsp;&nbsp;<img src="imag/wang.png" style="width: 60px;height: 60px">
+                <br/>
+                &nbsp;&nbsp;<span style="color: white;font-size: 20px">《守望先锋》：联赛代币</span>
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="color:#9A9FB3">可解锁内容</span>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="font-size: 20px;color: white">￥158</span>
+            </p>
+        </div>
+    </div>
+
+
+    <div class="nth-bb">
+        <div class="ch" style="background-color: #002650;margin-left:200px;border: none;height: 200px">
+            <p style="color: white"><span style="font-size: 30px">周边</span><br><br>
+                前往周边商城尽情选购。</p>
+        </div>
+        <div class="ch-o"
+             style="background: url('imag/ManT4.jpg')no-repeat; background-size: contain;background-color: #121212">
+            <p style="margin-top: 180px">
+                &nbsp;&nbsp;&nbsp;<img src="imag/wang.png" style="width: 60px;height: 60px">
+                <br/>
+                &nbsp;&nbsp;<span style="color: white;font-size: 20px">Overwatch@ League Shop</span>
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="color:#9A9FB3">周边</span>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                &nbsp;&nbsp;&nbsp;<span style="font-size: 20px;color: white">了解详情</span>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        $(".ch-o").mouseover(function () {
+            $(this).css({"height": "460px", "width": "310px"});
+        }).mouseout(function () {
+            $(this).css({"height": "450px", "width": "300px"});
+        });
+    </script>
+    <!--底部-->
+    <div class="nth-bc">
+        <div class="bott">
+            <img src="imag/wa1.png"/>
+            <img src="imag/wa2.png"/>
+
+            <div id="f-business" class="f-cb">
+                <p class="f-cs">
+                    <a href="" class="cs-online">
+                        <span class="icon icon-1"></span>在线客服</a>&nbsp;&nbsp;&nbsp;
+                    <a href="" class="cs-Feedback">
+                        <span class="icon icon-2"></span>反馈</a>&nbsp;&nbsp;&nbsp;
+                    <a target="_blank" class="cs-joinUs" href=""><span class="icon icon-3"></span>加入我们</a>&nbsp;&nbsp;&nbsp;
+                </p>
+
+                <div class="foot-media" id="js_footMedia">
+                    <dl style="display: none;">
+                        <dt><span class="icon-media">合作媒体</span><span class="icon-more"><i></i></span></dt>
+                        <dd>
+                            <ul id="js_joiner"></ul>
+                        </dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="cprt">
+                <a href="" class="logo_bz"></a>
+                <a href="" class="logo_ne"></a>
+
+                <div class="info">
+                    <p class="clearFix">
+                        隐私|法律条款|API
+                    </p>
+
+                    <p>?2019 暴雪娱乐有限公司版权所有 <span>由上海网之易网络科技发展有限公司运营</span>
+                        著作权侵权
+                        &nbsp;|&nbsp;<span id="js_shenzi">新广出审[2016]378号</span>
+                    </p>
+
+                    <p><span id="js_wenjinwang">文网游进字[2016]0025号</span>&nbsp;|&nbsp;
+                        沪网文号〔2017〕9633-727号
+                        &nbsp;|&nbsp;
+                        增值电信业务经营许可证编号：沪B2－20080012
+                    </p>
+
+                    <p>互联网违法和不良信息举报电话：0571-28090163&nbsp;沪公网安备 31011502022167号&nbsp;|&nbsp;
+                        上海市网络游戏行业自律公约
+                    </p>
+
+                    <p class="integrity">
+                        <a target="_blank" href="">
+                            <img src="imag/p1.png"></a>
+                        <a target="_blank" href="">
+                            <img src="imag/p2.png"></a>
+
+                        <a target="_blank" href="">
+                            <img src="imag/p3.png"></a>
+                        <a target="_blank" href=""><img src="imag/p4.png"> </a>
+
+                        <a target="_blank" href="">
+                            <img src="imag/p2.png"></a>
+                        <span>| &nbsp;适龄提示：适合13岁及以上使用&nbsp;&nbsp;</span>
+                        <a href="" target="_blank">家长监护工程&gt;</a>
+                    </p>
+                </div>
+            </div>
+            <hr/>
+            <p class="tips">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。
+                <br>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p></div>
+    </div>
+</div>
+</body>
+</html>
+
+

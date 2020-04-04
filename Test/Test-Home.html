@@ -1,0 +1,1040 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>守望先锋 | 官网</title>
+</head>
+<script src="../js/jquery-1.12.4.js"></script>
+
+<style>
+
+    body {
+        color: #333;
+        fill: #333;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: 100%;
+        display: block;
+        background-color: #f0edf2;
+        max-width: 100%;
+        overflow-x: hidden;
+        font: normal normal normal 10px "microsoft yahei",Arial,sans-serif;
+        font-size: 1.5rem;
+        line-height: 1.4;
+    }
+    .row{
+        position: absolute;left: 700px;top: 300px;
+    }
+    .u-relative{
+        position: relative;right:160px;bottom: 30px;
+    }
+    .hide2{
+        margin-left:180px;
+
+    }
+    .ideo1{
+        margin-left:180px;
+    }
+    .show-for-xl{
+        padding: 0px;
+        margin: 0px;
+
+    }
+    .showvid{
+        margin: 0px;
+        padding: 0px;
+        width: 99.9%;
+    }
+
+    .fixed {
+        position: fixed;
+        top: 0;
+    }
+    .navbars {
+        left: 0;
+        width: 100%;
+        z-index: 999;
+        background-color:rgba(40,53,79,.8);
+    }
+    blockquote, dd, div, dl, dt, form, h1, h2, h3, h4, h5, h6, li, ol, p, pre, td, th, ul {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav[role=main] {
+        background-color: #f2f1ed;
+        position: relative;
+        z-index: 96;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1600px;
+    }
+    nav[role=main] .nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    nav[role=main] .nav-left {
+        float: left;
+        font-size: 0;
+        margin: 0;
+        display: flex;
+        flex-flow: row;
+        justify-content: flex-start;
+        align-items: center;
+    }
+    ul {
+
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+    ul {
+        list-style-type: disc;
+        margin-left: 1.25rem;
+    }
+    dl, ol, ul {
+        line-height: 1.6;
+        margin-bottom: 1rem;
+        list-style-position: outside;
+    }
+    nav[role=main] .nav-btn {
+        height: 100%;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        justify-content: center;
+        border-bottom: 0 solid transparent;
+        box-sizing: border-box;
+        font-size: 20px;
+        padding: 0 20px;
+        text-transform: none;
+        color: white;
+        text-align: center;
+        text-shadow: none;
+        letter-spacing: .05em;
+        position: relative;
+        cursor: pointer;
+        border-right: 1px solid #e5e3dc;
+        -webkit-transition: background-color .2s;
+        transition: background-color .2s;
+    }
+    .blog-index a {
+        color: #f0edf2;
+    }
+
+    a {
+        color: #f7931e;
+        text-decoration: none;
+        line-height: inherit;
+        cursor: pointer;
+        background-color: transparent;
+    }
+
+    nav[role=main].nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    li {
+        display: list-item;
+        text-align: -webkit-match-parent;
+    }
+    nav[role=main] .nav-right {
+        float: right;
+        font-size: 0;
+        margin: 0;
+        height: 48px;
+    }
+
+
+
+
+
+    nav[role=main] .nav-menu {
+        margin: 0;
+        height: 48px;
+    }
+    nav[role=main] .nav-menu.m-sub-menu li {
+        display: block;
+    }
+    nav[role=main] .nav-menu li {
+        height: 100%;
+        position: relative;
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        align-items: center;
+    }
+    li {
+        font-size: inherit;
+    }
+    .nav-right{
+        background-color:rgb(247, 147, 30);
+    }
+    .home-header__logotext{
+        height: 45px;
+    }
+    #gotop {
+        width: 40px;
+        height: 30px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        background: rgba(255,255,255,.25);
+        color: #000;
+        line-height: 30px;
+        text-align: center;
+        border-radius: 3px;
+        font-size: 12px;
+        z-index: 501;
+        display: none;
+        cursor: pointer;
+    }
+    .tx{
+        background: rgba(3,12,21,.98);;
+        width: 80%;
+        height: 80%;
+        position: fixed;top: 12%;left: 10%;
+        z-index: 998;
+    }
+    .num1 {
+        color: #00c3ff;
+        font-size: 70px;
+        position: fixed;top: 12%;left: 86%;
+        z-index: 999;
+    }
+    .nav-btn.m-highlight {
+        font-size: 10px;
+    }
+</style>
+<style>
+    nav[role=main] .nav-menu.m-sub-menu {
+        margin: 0;
+        background-color: #353c42;
+        position: absolute;
+        top: 100%;
+        min-width: 160px;
+        left: 0;
+        height: auto;
+        z-index: 99;
+        display: none;
+    }
+    nav[role=main] .nav-btn.m-open, nav[role=main] .nav-btn:hover {
+        background-color: #353c42;
+        -webkit-transition: none;
+        transition: none;
+        color: #ff9c00;
+    }
+    .show-for-xl{
+        height: 1100px;
+    }
+</style>
+<script src="../js/jquery-1.12.4.js"></script>
+<script>
+$(document).ready(function(){
+    var sticky = document.querySelector('.navbars');
+    var origOffsetY = sticky.offsetTop;
+
+    function onScroll(e) {
+        window.scrollY >= origOffsetY ? sticky.classList.add('fixed') :
+                sticky.classList.remove('fixed');
+    }
+
+    document.addEventListener('scroll', onScroll);
+});
+
+</script>
+
+<section class="home-header">
+    <div class="show-for-xl">
+
+        <p style="background: white;width: 100%; height: 30px" class="ti" ></p>
+
+        <div class="navbars">
+            <nav role="main" class=""style="max-width:1600px;" >
+                <div class="nav-left">
+                    <img src="../imag/01.png" class="home-header__logotext">
+                </div>
+                <ul class="nav-menu nav-left">
+                    <li>
+                        <a href="javascript:void(0);" class="nav-btn m-has-children">游戏</a>
+                        <ul class="nav-menu m-sub-menu">
+                            <li><a href="" class="nav-btn m-highlight">概述</a></li>
+                            <li><a href="" class="nav-btn m-highlight">赞赏系统</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="nav-btn ">英雄</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="nav-btn m-has-children">活动</a>
+                        <ul class="nav-menu m-sub-menu">
+                            <li><a href="">夏季运动会</a></li>
+                            <li><a href="" class="nav-btn m-highlight">行动档案</a></li>
+                            <li><a href="" class="nav-btn m-highlight">欢度新春</a></li>
+                            <li><a href="" class="nav-btn m-highlight">雪国仙境</a></li>
+                            <li><a href="" class="nav-btn m-highlight">万圣夜惊魂</a></li>
+                            <li><a href="" class="nav-btn m-highlight">周年庆典</a></li>
+                            <li><a href="" class="nav-btn m-highlight">国王行动</a></li>
+                        </ul>
+                    </li><li><a href="" class="nav-btn ">视频图片</a></li>
+                    <li>
+                        <a href="javascript:void(0);" class="nav-btn m-has-children">新闻</a>
+                        <ul class="nav-menu m-sub-menu">
+                            <li><a href="" class="nav-btn m-highlight m-active">新闻</a></li>
+                            <li><a href="" class="nav-btn m-highlight">补丁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="" class="nav-btn">下载</a></li>
+                    <li>
+                        <a href="" class="nav-btn m-has-children">电子竞技</a>
+                        <ul class="nav-menu m-sub-menu">
+                            <li><a href="">概述</a></li>
+                            <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋公开争霸赛</a></li>
+                            <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋挑战者选拔赛</a></li>
+                            <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋挑战者系列赛</a></li>
+                            <li><a href="" target="_blank" class="nav-btn m-highlight">守望先锋联赛</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:void(0);" class="nav-btn m-has-children">社区</a>
+                        <ul class="nav-menu m-sub-menu">
+                            <li><a href="" class="nav-btn m-highlight">生涯数据</a></li>
+                            <li><a href="" class="nav-btn m-highlight">我们身边的英雄</a></li>
+                            <li><a href="" target="_blank" class="nav-btn m-highlight">论坛</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="nav-right"><a href="../Shopping-mail.html" target="_blank" class="nav-btn m-orange m-big">购买</a></div>
+            </nav>
+        </div>
+        <video muted="muted" autoplay="autoplay" loop="" class="showvid">
+            <source src="../imag/shio.webm" type="video/webm">
+            <source src="../imag/shio.webm" type="video/mp4">
+        </video>
+    </div>
+    <div class="row">
+        <div class="hide"><img src="../imag/a2.png" class="logotext"></div>
+        <div class="u-relative"><h2 class="h3">“年度最佳运营游戏奖” - The Game Awards</h2></div>
+        <a href="../Shopping-mail.html" class="hide2" style="color:white;">立即购买</a>
+        <br/><br/><br/>
+        <a class="ideo1" style="color:white;">游戏介绍</a>
+    </div>
+    <div class="num1" harf="">x</div>
+    <div class="tx" style="height:85%"><video width="100%" height="100%" controls="controls" autoplay="autoplay" preload="auto" id="mp">
+        <source src="../imag/游戏介绍.mp4" type="video/mp4">您的浏览器暂时无法播放此视频.</video>
+    </div>
+
+    <a id="gotop" class="active" href="#top" hidefocus="true" style="display: inline;">TOP</a>
+</section>
+
+
+<script>
+    $("li a").mouseover(function(){
+        $(this).css({"background-color":"black"})
+    }).mouseout(function(){
+        $(this).css({"background-color":"rgba(40,53,79,.8)"});
+    });
+
+   $(function(){
+      $(".nav-menu.nav-left>li").hover(function(){
+          $(this).find("ul").show();
+      },function(){
+          $(this).find("ul").hide();
+      }) ;
+   });
+
+    $(".hide2").css({"background-color":"rgb(247, 147, 30)"});
+    $(".hide2").mouseover(function(){
+        $(".hide2").css({"background-color":"rgba(247, 147, 30,.7)"});
+    }).mouseout(function(){
+        $(".hide2").css({"background-color":"rgb(247, 147, 30)"});
+    });
+    var myVideo = document.getElementsByTagName('video')[1];
+    myVideo.pause();
+    $(".tx").hide();
+    $(".num1").hide();
+
+    $(".ideo1").click(function(){
+        $(".tx").show();
+        $(".num1").show();
+        myVideo.play();
+    });
+    $(".num1").click(function(){
+        $(".tx").hide();
+        $(".num1").hide();
+        myVideo.pause();
+
+    });
+    $(document).ready(function(){
+        $(".logotext").css({"width":"473px","height":"279px"});
+        $(".h3").css({"color":"white","font-size":"40px"});
+        $(".hide2").css({"padding-top":"10px","padding-bottom":"10px","padding-right":"20px","padding-left":"20px","background-color":"rgb(247, 147, 30)"});
+        $(".ideo1").css({"padding-top":"10px","padding-bottom":"10px","padding-right":"20px","padding-left":"20px","background-color":"black"});
+        $(".ideo1").mouseover(function(){
+            $(".ideo1").css({"background-color":"rgba(0,0,0,.1)","border":"2px solid white"});
+        }).mouseout(function(){
+            $(".ideo1").css({"background-color":"black","border":"none"});
+        });
+    });
+</script>
+<!--<section class="outter news-panels">-->
+<div class="inner">
+    <h2 class="h5">新闻公告</h2>
+    <div class="box1">
+        <img src="../imag/02.jpg" class="pd"/>
+        <div class="content">
+            <h3 class="hitle"><a href="http://ow.blizzard.cn/article/news/1276">
+                &nbsp;  &nbsp; 1.34版本更新：巴蒂斯特现已上线
+            </a></h3>
+            <p class="subtitle"></p>
+        </div>
+    </div>
+
+
+    <div class="box2">
+        <img src="../imag/03.jpg" class="ap"/>
+        <div class="content">
+            <h3 class="htitle"><a href="http://ow.blizzard.cn/article/news/796">
+                &nbsp;  &nbsp; &nbsp;购《守望先锋》享5折特惠
+            </a></h3>
+            <p class="subtitle u-font-small"></p>
+        </div>
+    </div>
+
+    <div class="box3">
+        <a href="" class="hcan" style="color:white;">查看所有新闻</a>
+    </div>
+</div>
+
+<style>
+    .inner{
+        padding: 0px;
+        margin: 0px;
+        background: white;
+        height: 500px;
+    }
+    .box1{
+        width: 700px;
+        height: 300px;
+        float: left;
+        position: relative;left: 200px;
+
+
+    }
+    .box2{
+        width: 700px;
+        height: 300px;
+        float: right;
+        position: relative;right: 200px;
+    }
+    .ap{
+        width: 700px;
+        height: 300px;
+    }
+    .h5{
+        margin-left: 890px;
+    }
+    .hitle{
+        width: 695px;
+        background-color:rgba(0,0,0,.7);
+        padding-top:15px;
+        padding-bottom:10px;
+        position: relative;bottom: 70px;
+
+    }
+    .htitle{
+        width: 700px;
+        background-color:rgba(0,0,0,.7);
+        padding-top:15px;
+        padding-bottom:10px;
+        position: relative;bottom: 70px;
+    }
+    .box3{
+
+        position: relative;top: 360px;left: 160px;
+
+    }
+    .hcan{
+        background: rgb(0, 165, 226);
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right:20px;
+        padding-left:20px;
+    }
+</style>
+
+<script>
+    $(".hcan").mouseover(function(){
+        $(".hcan").css({"background-color":"rgba(0, 165, 226,.6)"});
+    }).mouseout(function(){
+        $(".hcan").css({"background-color":"rgba(0, 165, 226)"});
+    });
+</script>
+
+
+<section class="fight-section bg-cairo outter">
+    <!--<div class="bg-cairo bg-fftf trans-in"></div>-->
+    <!--<div class="bg-volskaya bg-fftf trans-out"></div>-->
+    <!--<div class="bg-london bg-fftf trans-out"></div>-->
+    <div class="inner2">
+        <div class="inne">
+            <h2 class="intro-heading">为未来而战</h2>
+            <p class="intro-text">军人、科学家、冒险家、奇人异士。
+                <br />
+                <br />在人类陷入空前危机之时，来自全球各个国家的特种精英们，为了结束战争、重铸秩序而团结在了一起。他们，就是<strong>守望先锋</strong>。
+                <br />
+                <br />英雄们最终结束了这场危机，人类文明在随后的数十年内和平共存并迎来了一个探索、革新和发现的新时代。尽管如此，守望先锋在多年后逐渐被人们所遗忘，最终难逃被解散的命运。
+                <br />
+                <br />
+            </p>
+            <p class="intro-text u-align-center u-center-block">如今，世界各地争端再起，人们都翘首期待着新英雄的出现，或旧英雄的归来。
+                <br />
+                <br />你愿意与我们共同抗争吗？
+            </p>
+            <br/> <br/>
+            <a href="/game/" class="m-lg" style="color:white;">探索游戏</a>
+        </div>
+    </div>
+
+</section>
+
+<script>
+    $(".intro-heading").css({"color":"white","font-size":"50px"});
+    $(".inne").css({"text-align":"center"});
+    $(".inne>p").css({"font-size":"20px","color":"white","width":"800px"});
+    var img=new Array("05.jpg","06.jpg","07.jpg");
+    var i=0;
+    $(".inner2").css({"background": "url('img/"+img[i]+"') no-repeat","height":"690px"});
+    function showTime(){
+        if(i<img.length-1){
+            i++;
+        }else{
+            i=0;
+        }
+        $(".inner2").css({"background": "url('img/"+img[i]+"') no-repeat","height":"690px"});
+    }
+    //这里有问题
+    //setInterval("showTime()","6000");
+
+    $(".m-lg").css({"background-color":"rgb(247, 147, 30)"});
+    $(".m-lg").mouseover(function(){
+        $(".m-lg").css({"background-color":"rgba(247, 147, 30,.7)"});
+    }).mouseout(function(){
+        $(".m-lg").css({"background-color":"rgb(247, 147, 30)"});
+    });
+
+</script>
+<style>
+    .inne{
+        position: absolute;left: 550px;
+    }
+    .m-lg{
+        padding-top:10px;
+        padding-bottom:10px;
+        padding-right:20px;
+        padding-left:20px;
+    }
+    #txt{
+        width: 400px;
+        position: relative;left:1200px;bottom:400px;
+    }
+    #txt span{
+        color: white;
+        font-size: 50px;
+    }
+    #br{
+        width: 400px;
+        position: relative;left:1200px;bottom:400px;
+        color: white;
+        font-size: 20px;
+    }
+    .rowcolumn{
+        margin: 0px;
+        padding: 0px;
+        text-align: center;
+    }
+    .u-max-width{
+        height: 400px;
+        background: url("../imag/min1.jpg") no-repeat;
+    }
+    .full-width-container{
+        height: 250px;
+        background: grey;
+    }
+    .u-max-width-container{
+        height: 400px;
+        background: url("../imag/min3.jpg") no-repeat;
+    }
+    .intro-heading{
+        color: #1965B3;
+        font-size: 50px;
+        padding-top: 100px;
+    }
+    .intro-text{
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .xiao{
+        width: 1300px;
+        position: absolute;left: 350px;
+    }
+
+    .xiao a img{
+        border-radius: 20px;
+        width: 80px;
+        height: 70px;
+    }
+    #axi{
+        width: 400px;
+        height: 450px;
+        position: relative;bottom: 120px;
+
+    }
+
+</style>
+<section class="heroes-section">
+    <div class="rowcolumn">
+        <div class="u-max-width">
+            <h2 class="intro-heading"><em>各具特色的英雄</em></h2>
+            <div class="intro-text">
+                <p>不论喜欢哪种游戏方式，你总能找到适合自己玩法的英雄。
+                    <br />掌握他们独特的技能玩法，享受《守望先锋》的无穷乐趣！</p>
+            </div>
+        </div>
+        <div class="full-width-container">
+            <div class="spotlight">
+                <img  id="axi" src="../imag/q1.png"/>
+                <p id="txt"><span id="sp">D.Va</span><br/><p id="br">一名前职业玩家，而现在则利用自己的技巧驾驶一台尖端机甲包围国家。</p></p>
+            </div>
+        </div>
+        <div class="u-max-width-container">
+            <div class="xiao">
+                </br></br></br>
+                <a><img src="../imag/1.png" id="x1"/></a>
+                <a><img src="../imag/2.png" id="x2"/></a>
+                <a><img src="../imag/3.png" id="x3"/></a>
+                <a><img src="../imag/4.png" id="x4"/></a>
+                <a><img src="../imag/5.png" id="x5"/></a>
+                <a><img src="../imag/6.png" id="x6"/></a>
+                <a><img src="../imag/7.png" id="x7"/></a>
+                <a><img src="../imag/8.png" id="x8"/></a>
+                <a><img src="../imag/9.png" id="x9"/></a>
+                <a><img src="../imag/10.png" id="x10"/></a>
+                <a><img src="../imag/11.png" id="x11"/></a>
+                <a><img src="../imag/12.png" id="x12"/></a>
+                <a><img src="../imag/13.png" id="x13"/></a>
+                <a><img src="../imag/14.png" id="x14"/></a>
+                </br></br>
+                <a><img src="../imag/15.png" id="x15"/></a>
+                <a><img src="../imag/16.png" id="x16"/></a>
+                <a><img src="../imag/17.png" id="x17"/></a>
+                <a><img src="../imag/18.png" id="x18"/></a>
+                <a><img src="../imag/19.png" id="x19"/></a>
+                <a><img src="../imag/20.png" id="x20"/></a>
+                <a><img src="../imag/21.png" id="x21"/></a>
+                <a><img src="../imag/22.png" id="x22"/></a>
+                <a><img src="../imag/23.png" id="x23"/></a>
+                <a><img src="../imag/24.png" id="x24"/></a>
+                <a><img src="../imag/25.png" id="x25"/></a>
+                <a><img src="../imag/26.png" id="x26"/></a>
+                <a><img src="../imag/27.png" id="x27"/></a>
+                <a><img src="../imag/28.png" id="x28"/></a>
+                </br></br>
+                <a><img src="../imag/29.png" id="x29"/></a>
+                <a><img src="../imag/30.png" id="x30"/></a>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<script>
+    var img=document.getElementById("axi");
+    $(".xiao a img").mouseover(function(){
+        $(this).css({"background-color":"rgb(247, 147, 30)"});
+    }).mouseout(function(){
+        $(this).css({"background-color":"rgba(247, 147, 30,.1)"});
+    });
+
+
+    $("#x1").mouseover(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+        $(img.setAttribute("src","img/q1.png"));
+        $(document.getElementById("sp").innerHTML="D.Va");
+        $(document.getElementById("br").innerHTML="一名前职业玩家，而现在则利用自己的技巧驾驶一台尖端机甲包围国家。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+    });
+    $("#x2").mouseover(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+        $(img.setAttribute("src","img/q2.png"));
+        $(document.getElementById("sp").innerText="奥丽莎");
+        $(document.getElementById("br").innerText="维护努巴尼秩序并保护努巴尼人民的维和机器人。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+    });
+    $("#x3").mouseover(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+        $(img.setAttribute("src","img/q3.png"));
+        $(document.getElementById("sp").innerText="莱茵哈特");
+        $(document.getElementById("br").innerText="一名属于过去的勇士，时刻铭记着骑士的信条：无畏丶公正丶无私。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+    });
+    $("#x4").mouseover(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+        $(img.setAttribute("src","img/q4.png"));
+        $(document.getElementById("sp").innerText="路霸");
+        $(document.getElementById("br").innerText="一名残暴的杀手丶因残忍和肆意破坏而臭名昭著。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+    });
+    $("#x5").mouseover(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+        $(img.setAttribute("src","img/q5.png"));
+        $(document.getElementById("sp").innerText="温斯顿");
+        $(document.getElementById("br").innerText="一只经过改造，拥有高等智慧的大猩猩，也是一位出色的科学家和代表着人类潜力的勇士。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+    });
+
+
+    $("#x6").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q6.png"));
+        $(document.getElementById("sp").innerText="查里雅");
+        $(document.getElementById("br").innerText="世界上最强壮的女性之一。为了保卫祖国，毅然放弃了个人荣誉。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x7").mouseover(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+        $(img.setAttribute("src","img/q7.png"));
+        $(document.getElementById("sp").innerText="破坏球");
+        $(document.getElementById("br").innerText="驾驶这台滚动式坦克的是一只经过基因改造的仓鼠，他来自月球基地。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+    });
+    $("#x8").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q8.png"));
+        $(document.getElementById("sp").innerText="巴蒂斯特");
+        $(document.getElementById("br").innerText="一位配备了新型治疗设备的精英战地医疗兵。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x9").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q9.png"));
+        $(document.getElementById("sp").innerText="艾什");
+        $(document.getElementById("br").innerText="肆虐美国西南部、臭名昭著的死局帮的首脑。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x10").mouseover(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+        $(img.setAttribute("src","img/q10.png"));
+        $(document.getElementById("sp").innerText="堡垒");
+        $(document.getElementById("br").innerText="一名可以切换形态的机器人，为自然着迷而探索世界，同时也对人类保持着戒心。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+    });
+
+
+    $("#x11").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q11.png"));
+        $(document.getElementById("sp").innerText="末日铁拳");
+        $(document.getElementById("br").innerText="一位利用个人头脑、魅力和蛮力来创建一个更强大世界的战术家。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x12").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q12.png"));
+        $(document.getElementById("sp").innerText="源氏");
+        $(document.getElementById("br").innerText="一名致命的半机械忍者，通过他的机械躯体寻得了身心的和谐。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x13").mouseover(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+        $(img.setAttribute("src","img/q13.png"));
+        $(document.getElementById("sp").innerText="半藏");
+        $(document.getElementById("br").innerText="一名强大而致命的弓箭大师。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+    });
+
+
+    $("#x14").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q14.png"));
+        $(document.getElementById("sp").innerText="狂鼠");
+        $(document.getElementById("br").innerText="一名满脑子都是爆炸的变态疯子，只为了混乱和破坏而活。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x15").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q15.png"));
+        $(document.getElementById("sp").innerText="麦克雷");
+        $(document.getElementById("br").innerText="一名亡命天涯的神枪手，以自己的方式伸张正义。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x16").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q16.png"));
+        $(document.getElementById("sp").innerText="美");
+        $(document.getElementById("br").innerText="一名能够操控天气，为了保护环境而选择战斗的科学家。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x17").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q17.png"));
+        $(document.getElementById("sp").innerText="法老之鹰");
+        $(document.getElementById("br").innerText="一名恪守岗位的战士，用实验性的“猛禽”作战服确保天空的安全。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x18").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q18.png"));
+        $(document.getElementById("sp").innerText="死神");
+        $(document.getElementById("br").innerText="一名无情的杀手，一直在追杀前守望先锋的特工们。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x19").mouseover(function(){
+        $("#axi").css({"width":"200px","height":"450px"});
+        $(img.setAttribute("src","img/q19.png"));
+        $(document.getElementById("sp").innerText="士兵：76");
+        $(document.getElementById("br").innerText="一名试图自己将守望先锋敌人绳之于法的独行侠。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"200px","height":"450px"});
+    });
+
+    //有问题
+    $("#x20").mouseover(function(){
+        $("#axi").css({"width":"200px","height":"450px"});
+        $(img.setAttribute("src","img/q20.png"));
+        $(document.getElementById("sp").innerText="黑影");
+        $(document.getElementById("br").innerText="臭名昭著的黑客，沉迷于揭秘——及其带来的权力。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"200px","height":"450px"});
+    });
+
+    $("#x21").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q21.png"));
+        $(document.getElementById("sp").innerText="秩序之光");
+        $(document.getElementById("br").innerText="一名通过控制高强度光束，将世界改造成她心目中完美、有序的模样的光子建筑师。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x22").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q22.png"));
+        $(document.getElementById("sp").innerText="托比昂");
+        $(document.getElementById("br").innerText="一名天才工程师，可以在战场上打造武器系统。");
+
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x23").mouseover(function(){
+        $("#axi").css({"width":"250px","height":"450px"});
+        $(img.setAttribute("src","img/q23.png"));
+        $(document.getElementById("sp").innerText="猎空");
+        $(document.getElementById("br").innerText="一名前守望先锋特工，同时也是可以穿梭时间的充满正义的冒险家。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"250px","height":"450px"});
+    });
+    $("#x24").mouseover(function(){
+        $("#axi").css({"width":"200px","height":"450px"});
+        $(img.setAttribute("src","img/q24.png"));
+        $(document.getElementById("sp").innerText="黑百合");
+        $(document.getElementById("br").innerText="一名完美的杀手：耐心、果断、无情。没有任何情感且事后毫无悔意。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"200px","height":"450px"});
+    });
+    $("#x25").mouseover(function(){
+        $("#axi").css({"width":"200px","height":"450px"});
+        $(img.setAttribute("src","img/q25.png"));
+        $(document.getElementById("sp").innerText="安娜");
+        $(document.getElementById("br").innerText="守望先锋的创始成员之一，“起死回生”重返战场保护亲人和朋友。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"200px","height":"450px"});
+    });
+    $("#x26").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q26.png"));
+        $(document.getElementById("sp").innerText="布丽吉塔");
+        $(document.getElementById("br").innerText="一位渴望冒险，希望惩强扶弱的重装战士。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x27").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q27.png"));
+        $(document.getElementById("sp").innerText="卢西奥");
+        $(document.getElementById("br").innerText="一位国际名人，通过音乐和巡演激发社会正能量。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x28").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q28.png"));
+        $(document.getElementById("sp").innerText="天使");
+        $(document.getElementById("br").innerText="一名集顶尖的治疗者、出色的科学家和坚定的和平主义者于一身的守护天使。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+    $("#x29").mouseover(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+        $(img.setAttribute("src","img/q29.png"));
+        $(document.getElementById("sp").innerText="莫伊拉");
+        $(document.getElementById("br").innerText="一位天才基因科学家，无视道德的束缚，一心追求科学发现。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"400px","height":"450px"});
+    });
+    $("#x30").mouseover(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+        $(img.setAttribute("src","img/q30.png"));
+        $(document.getElementById("sp").innerText="禅雅塔");
+        $(document.getElementById("br").innerText="一位游走于世界寻找灵魂升华之道的机械僧侣。");
+    }).mouseout(function(){
+        $("#axi").css({"width":"300px","height":"450px"});
+    });
+</script>
+
+<style>
+    .om{
+        width: 100%;
+        background: url("../imag/an.jpg")no-repeat;
+        position: fixed;top: 5px;
+        z-index: -1;
+    }
+    .wan1{
+        height: 450px;
+        background: black;
+        opacity: 0;
+    }
+
+    .wan2{
+        background: url("../imag/min1.jpg")no-repeat;
+        height: 350px;
+    }
+    .w1{
+        position: relative;bottom: 37px;
+    }
+    .bott{
+        margin: 0;
+        padding: 0;
+        position: relative;
+        line-height: 26px;
+        width: auto;
+        font-size: 12px!important;
+    }
+    .intro{
+        color: white;
+        font-size: 50px;
+        position: relative;bottom: 300px;left: 400px;
+    }
+    .w2{
+        width: 200px;height: 200px;
+        position: relative;bottom: 100px;left: 1000px;
+    }
+</style>
+<img src="../imag/an.jpg" class="om"/>
+<div class="wan1"></div>
+<div class="wan2">
+    <img src="../imag/sen.png" class="w1"/><img src="../imag/wang.png" class="w2"/>
+    <p class="intro"><em>现在即是未来，你来吗？
+        这个世界需要英雄.</em></p>
+
+</div>
+
+
+<!--底部样式-->
+<style>
+    .xian{
+        width: 100%;
+        height: 20px;
+        background: black;
+        position: relative;bottom: 20px;
+    }
+    .bott{
+        text-align: center;
+        background: grey;
+
+    }
+    .clearFix{
+        font-style: normal;
+    }
+    .cprt{
+        color: black;
+        font-size: 15px;
+    }
+</style>
+
+<div class="bott">
+    <img src="../imag/wa1.png"/>
+    <img src="../imag/wa2.png"/>
+    <div id="f-business" class="f-cb">
+        <p class="f-cs">
+            <a href=""class="cs-online">
+                <span class="icon icon-1"></span>在线客服</a>&nbsp;&nbsp;&nbsp;
+            <a href="" class="cs-Feedback">
+                <span class="icon icon-2"></span>反馈</a>&nbsp;&nbsp;&nbsp;
+            <a target="_blank" class="cs-joinUs" href=""><span class="icon icon-3"></span>加入我们</a>&nbsp;&nbsp;&nbsp;
+        </p>
+        <div class="foot-media" id="js_footMedia">
+            <dl style="display: none;">
+                <dt><span class="icon-media">合作媒体</span><span class="icon-more"><i></i></span></dt>
+                <dd><ul id="js_joiner"></ul></dd>
+            </dl>
+        </div>
+    </div>
+    <div class="cprt">
+        <a href="" class="logo_bz"></a>
+        <a  href="" class="logo_ne"></a>
+        <div class="info">
+            <p class="clearFix">
+                隐私|法律条款|API
+            </p>
+
+            <p>?2019 暴雪娱乐有限公司版权所有 <span>由上海网之易网络科技发展有限公司运营</span>
+                著作权侵权
+                &nbsp;|&nbsp;<span id="js_shenzi">新广出审[2016]378号</span>
+            </p>
+            <p><span id="js_wenjinwang">文网游进字[2016]0025号</span>&nbsp;|&nbsp;
+                沪网文号〔2017〕9633-727号
+                &nbsp;|&nbsp;
+                增值电信业务经营许可证编号：沪B2－20080012
+            </p>
+            <p>互联网违法和不良信息举报电话：0571-28090163&nbsp;沪公网安备 31011502022167号&nbsp;|&nbsp;
+                上海市网络游戏行业自律公约
+            </p>
+            <p class="integrity">
+                <a target="_blank" href="">
+                    <img src="../imag/p1.png"></a>
+                <a target="_blank" href="">
+                    <img src="../imag/p2.png"></a>
+
+                <a target="_blank" href="">
+                    <img src="../imag/p3.png"></a>
+                <a target="_blank" href=""><img src="../imag/p4.png"> </a>
+
+                <a target="_blank" href="">
+                    <img src="../imag/p2.png"></a>
+                <span>| &nbsp;适龄提示：适合13岁及以上使用&nbsp;&nbsp;</span>
+                <a href="" target="_blank">家长监护工程&gt;</a>
+            </p>
+        </div>
+    </div>
+    <hr/>
+    <p class="tips">积极健康的游戏心态是健康游戏的开端，本游戏故事情节设置紧凑，请您合理控制游戏时间，避免沉溺游戏影响生活，注意自我保护，防范网络陷阱。
+        <br>健康游戏忠告：抵制不良游戏，拒绝盗版游戏。注意自我保护，谨防受骗上当。适度游戏益脑，沉迷游戏伤身。合理安排时间，享受健康生活。</p></div>
+</html>

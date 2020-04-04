@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>《守望先锋》登陆</title>
+    <link rel="stylesheet" href="base.css" />
+<script src="../js/jquery-1.12.4.js"></script>
+</head>
+<body>
+<body>
+<style>
+    body{
+        text-align: center;
+    }
+    html {
+        box-sizing: border-box;
+        font-size: 62.5%;
+    }
+
+    * {
+        padding: 0;
+        margin: 0;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+        box-sizing: inherit;
+    }
+    *::after, *::before {
+        box-sizing: inherit;
+    }
+
+    .bg-transparent {
+        background-color: transparent !important;
+    }
+
+    .bg-red {
+        background-color: #e74c3c !important;
+    }
+
+    .bg-orange {
+        background-color: #e67e22 !important;
+    }
+
+    .bg-green {
+        background-color: #2ecc71 !important;
+    }
+
+    body .password-wrapper {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    body {
+        background: url("../imag/dlbj.jpg")no-repeat;
+        background-size:cover ;
+    }
+    body .password-wrapper {
+        width: 80%;
+        max-width: 320px;
+        border-radius: 5px;
+        background-color: #fff;
+        overflow: hidden;
+    }
+    body .password-wrapper .input {
+        border: none;
+        padding: 10px 15px;
+        font: small-caption;
+        font-size: 18px;
+        font-size: 1.8rem;
+        width: calc(100% - 50px);
+        color: #34495e;
+        outline: none;
+        line-height: 1.5;
+    }
+    body .password-wrapper .icon-wrapper {
+        position: relative;
+        display: inline;
+        float: right;
+        width: 50px;
+        height: 50px;
+        background-color: #34495e;
+        transition: background-color 0.25s ease-out;
+        cursor: pointer;
+    }
+    body .password-wrapper .icon-wrapper .ion-eye,
+    body .password-wrapper .icon-wrapper .ion-more {
+        font-size: 26px;
+        font-size: 2.6rem;
+        position: absolute;
+        top: 11px;
+        right: 12px;
+        color: #ccc;
+        transition: color 0.25s ease-out;
+    }
+    body .password-wrapper .icon-wrapper .ion-more {
+        right: 14px;
+    }
+    body .password-wrapper .icon-wrapper:hover {
+        transition: background-color 0.25s ease-out;
+        background-color: #2c3e50;
+    }
+    body .password-wrapper .icon-wrapper:hover .ion-eye,
+    body .password-wrapper .icon-wrapper:hover .ion-more {
+        color: #3498db;
+        transition: color 0.25s ease-in;
+    }
+    body .password-wrapper .strength-lines {
+        position: absolute;
+        bottom: 2px;
+        left: 0;
+        right: 0;
+        width: calc(100% - 50px);
+        height: 6px;
+        z-index: 3;
+    }
+    body .password-wrapper .strength-lines .line {
+        position: absolute;
+        background-color: transparent;
+        height: 6px;
+        border-radius: 2px;
+        transition: background-color 0.25s ease-in;
+    }
+    body .password-wrapper .strength-lines .line:not(:first-of-type):not(:last-of-type) {
+        left: 33%;
+        right: 33%;
+    }
+    body .password-wrapper .strength-lines .line:first-of-type {
+        left: 4px;
+        right: 68%;
+    }
+    body .password-wrapper .strength-lines .line:last-of-type {
+        left: 68%;
+        right: 4px;
+    }
+    #password-field2{
+        border: none;
+        height: 50px;
+        border-radius: 5px;
+        width: 320px;
+    }
+.password-wrapper2{
+    width: 320px;
+    height: 50px;
+    position: absolute;left: 41.6%;top: 380px;
+    border-radius: 5px;
+    background: white;
+}
+    .btn-primary {
+        background-color: #0e86ca;
+        color: #fff;
+        border: 1px solid #10a1de;
+        box-shadow: 0 0 rgba(0,0,0,0);
+        border-radius: 0;
+        transition: background-color .2s,box-shadow .2s,background-color .2s,border-color .2s,color .2s;
+        box-shadow: 0 1px 1px rgba(0,0,0,0.3), 0 0 0 1px rgba(255,255,255,0.15) inset;
+        width: 100px;
+        height: 40px;
+    }
+    #netease{
+        background: red;
+        border: red;
+        width: 200px;
+        height: 30px;
+    }
+    .control-group{
+        font-size: 20px;
+        position: absolute;
+        left: 1020px;
+        top: 530px;
+    }
+
+
+    #accountName{
+        width: 300px;
+        height: 30px;
+        border: grey;
+        background:#06111B;
+    }
+    #password{
+        width: 300px;
+        height: 30px;
+        margin-top: 10px;
+        border: grey;
+        background: #06111B;
+    }
+
+    #help-links li a{
+        list-style: none;
+        text-decoration: none;
+        color: blue;
+        font-size: 20px;
+    }
+    #help-links{
+        margin-top: 100px;
+        margin-right: 40px;
+    }
+    .control{
+        margin-top: 40px;
+    }
+    #netease{
+        background: red;
+        border: red;
+        width: 200px;
+        height: 30px;
+
+    }
+    .di{
+        width: 100%;
+        text-align: center;
+        position: absolute;
+        top: 600px;
+    }
+    #help-links{
+        margin-left: 40px;
+    }
+</style>
+<style>
+#result{
+    font-size: 20px;
+    color: white;
+    margin-top: 60px;
+}
+</style>
+<a href="../Home-Page.html"><img src="../imag/dl.png" style="margin-top: 100px"></a>
+
+<div id="result"></div>
+<form action="../Home-Page.html" method="get" name="form1" onsubmit="return checkForm()">
+
+<div  class="password-wrapper2">
+    <input id="password-field2" type="name"  onfocus="focus_username()" onblur="blur_username()">
+</div>
+
+<div class="password-wrapper">
+    <input id="password-field" type="password" class="input" name="password" onfocus="focus_userpwd()" onblur="blur_userpwd()">
+    <div class="icon-wrapper">
+        <span toggle="#password-field" class="ion ion-eye field-icon toggle-password"></span>
+    </div>
+    <div class="strength-lines">
+        <div class="line"></div>
+        <div class="line"></div>
+        <div class="line"></div>
+    </div>
+</div>
+
+<div class="control-group">
+    <button type="submit" id="submit" class="btn btn-primary btn-large btn-block" data-loading-text="" tabindex="1">
+        登录
+        <i class="spinner-battlenet"></i>
+    </button>
+</div>
+
+
+</form>
+<div class="di">
+<div class="thirdparty-line">
+    <span style="color: grey">或使用以下账号登录</span>
+</div>
+<div class="control">
+    <form method="post" action="/login/signin/netease" id="neteaseLogin" class="third-party-login" enctype="">
+        <button id="netease" class="btn btn-block btn-large" rel="external" tabindex="1" style="color: white">
+            使用网易通行证登录
+        </button>
+        <input type="hidden" id="csrftoken-neteaseLogin" class="csrftoken" name="csrftoken" value="40744689-5f22-4e92-b0a3-034b3da8634a">
+
+    </form>
+</div>
+<ul id="help-links">
+    <li>
+        <a rel="internal" href="m" tabindex="1" id="signup">
+            免费创建暴雪游戏通行证
+        </a>
+    </li>
+    <li>
+        <a rel="internal" href="" tabindex="1" id="loginSupport">
+            无法登录？
+        </a>
+    </li>
+    <li>
+        <a rel="internal" href="" tabindex="1" id="tokenResync">
+            安全令重新同步
+        </a>
+    </li>
+</ul>
+</div>
+<script src="../js/jquery-1.12.4.js"></script>
+
+<script type="text/javascript">
+    function focus_username() {
+        //获取id=result_username的对象
+        var resultObj=document.getElementById("result");
+        //写入提示信息
+        resultObj.innerHTML = "请输入您的用户名";
+        resultObj.style.color = "#ccc";
+        //给文本框加个边框
+        //document.form1.username.style="border:1px solid #49bde0";
+    }
+    function blur_username() {
+        //获取id=result_username的对象
+        var resultObj = document.getElementById("result");
+        //用户名验证
+        var ss=document.getElementById("password-field2")
+        if(ss.value=="") {
+            resultObj.innerHTML="用户名不能为空";
+            resultObj.style.color="red";
+            return false;
+        } else if(ss.value.length<5||ss.value.length>20) {
+            resultObj.innerHTML="用户名长度必须介于5-20字符之间";
+            resultObj.style.color="red";
+            return false;
+        } else {
+
+            //可以正确提示
+            return true;
+        }
+    }
+
+    function focus_userpwd() {
+        //获取id=result_username的对象
+        var resultObj=document.getElementById("result");
+        //写入提示信息
+        resultObj.innerHTML = "请输入您的密码";
+        resultObj.style.color = "#ccc";
+        //给文本框加个边框
+        aa.style="border:1px solid #49bde0";
+    }
+    function blur_userpwd() {
+        //获取id=result_username的对象
+        var resultObj = document.getElementById("result");
+        var aa=document.getElementById("password-field")
+       aa.style="border:1px solid #ccc;background:none;";
+        //用户名验证
+        if(aa.value=="") {
+            resultObj.innerHTML="密码不能为空";
+            resultObj.style.color="red";
+            return false;
+        } else if(aa.value.length<5||aa.value.length>20) {
+            resultObj.innerHTML="密码长度必须介于5-20字符之间";
+            resultObj.style.color="red";
+            return false;
+        } else {
+            return true;
+        }
+    }
+    function checkForm() {
+        var flag_username = blur_username();
+        var flag_userpwd = blur_userpwd();
+        if (flag_username==true&&flag_userpwd==true) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+
+
+
+    $(document).ready(function() {
+
+        // hide/show password
+        $(".icon-wrapper").click(function() {
+            $(".toggle-password").toggleClass(".ion-eye ion-more");
+            var input = $($(".toggle-password").attr("toggle"));
+            if (input.attr("type") == "password") {
+                input.attr("type", "text");
+            } else {
+                input.attr("type", "password");
+            }
+        });
+
+        // strength validation on keyup-event
+        $("#password-field").on("keyup", function() {
+            var val = $(this).val(),
+                    color = testPasswordStrength(val);
+
+            styleStrengthLine(color, val);
+        });
+
+        // check password strength
+        function testPasswordStrength(value) {
+            var strongRegex = new RegExp(
+                            "^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*])(?=.{8,})"
+                    ),
+                    mediumRegex = new RegExp(
+                            "^(((?=.*[a-z])(?=.*[A-Z]))|((?=.*[a-z])(?=.*[0-9]))|((?=.*[A-Z])(?=.*[0-9])))(?=.{6,})"
+                    );
+
+            if (strongRegex.test(value)) {
+                return "green";
+            } else if (mediumRegex.test(value)) {
+                return "orange";
+            } else {
+                return "red";
+            }
+        }
+
+        function styleStrengthLine(color, value) {
+            $(".line")
+                    .removeClass("bg-red bg-orange bg-green")
+                    .addClass("bg-transparent");
+
+            if (value) {
+
+                if (color === "red") {
+                    $(".line:nth-child(1)")
+                            .removeClass("bg-transparent")
+                            .addClass("bg-red");
+                } else if (color === "orange") {
+                    $(".line:not(:last-of-type)")
+                            .removeClass("bg-transparent")
+                            .addClass("bg-orange");
+                } else if (color === "green") {
+                    $(".line")
+                            .removeClass("bg-transparent")
+                            .addClass("bg-green");
+                }
+            }
+        }
+
+    });
+
+</script>
+</body>
+</body>
+</html>
